@@ -1,5 +1,5 @@
 ---
-title: "Hello, The Infrastructure Guy"
+title: "Hello, The Infra Guy"
 date: 2022-03-19T10:44:39-07:00
 draft: false
 ---
@@ -12,28 +12,41 @@ The objective is to build a website using Hugo and Github Pages.
 
 # Steps
 
-## Step 1.) Create a Github account if you do not have one
+Follow the steps listed below:
 
-## Step 2.) Create a Github Repository 
+1. Create a Github account if you do not have one
+
+1. Create a Github Repository 
 
 Keep in mind, you can't use user name and password to access Git Repo now.
 You have to use a token a SSH key for the sake of security.
 
-## Step 3.) Go through Hugo's Quickstart Guide
+1. Go through Hugo's Quickstart Guide
 
-## Step 4.) Go though Hugo on Github
+1. Go though Hugo on Github
 
 Make sure you delete public folder and add a .gitignore file.
 
-## Step 5.) Set up Github Action workflow
+1. Set up Github Action workflow
 
 Make sure you enable 'extended' if your theme needs.
 
-## Step 6.) Go through Github Pages, and Settings
+1. Go through Github Pages, and Settings
 
-## Step 7.) Profit
+1. Profit
 
 Now, you can use your favorite Editor, e.g Visual Code or Vim,  to write blogs.
+
+
+# Summary
+
+To make this post happen, we learned and used the following concepts:
+- Markdown
+- GitHub
+- GitHub Repository
+- Github Pages
+- Github Actions
+- Hugo
 
 # Reference
 
