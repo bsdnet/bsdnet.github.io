@@ -1,32 +1,37 @@
 ---
-title: "Hello World, The Infrastructure Guy"
+title: "Hello, The Infrastructure Guy"
 date: 2022-03-19T10:44:39-07:00
 draft: false
 ---
 
+This post describes how I created this blog website using a couple of hours.
+
 # Objective 
 
-The objective of this post is to build a website using Hugo and Github Pages.
+The objective is to build a website using Hugo and Github Pages.
 
 # Steps
 
-## Create a Github account if you do not have one
+## Step 1.) Create a Github account if you do not have one
 
-## Create a Github Repository 
+## Step 2.) Create a Github Repository 
 
-## Go through Hugo's Quickstart Guide
+Keep in mind, you can't use user name and password to access Git Repo now.
+You have to use a token a SSH key for the sake of security.
 
-## Go though Hugo on Github
+## Step 3.) Go through Hugo's Quickstart Guide
+
+## Step 4.) Go though Hugo on Github
 
 Make sure you delete public folder and add a .gitignore file.
 
-## Set up Github Action workflow
+## Step 5.) Set up Github Action workflow
 
 Make sure you enable 'extended' if your theme needs.
 
-## Go through Github Pages, and Settings
+## Step 6.) Go through Github Pages, and Settings
 
-## Profit
+## Step 7.) Profit
 
 Now, you can use your favorite Editor, e.g Visual Code or Vim,  to write blogs.
 
