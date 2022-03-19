@@ -1,4 +1,4 @@
-baseURL = 'https://bsdnet.github.io/TheInfraGuy'
+baseURL = 'https://bsdnet.github.io'
 languageCode = 'en-us'
-title = 'A blog about IT infrastructure development'
+title = 'The Infra Guy'
 theme = "ananke"

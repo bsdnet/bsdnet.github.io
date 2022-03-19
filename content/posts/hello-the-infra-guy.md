@@ -18,29 +18,29 @@ Follow the steps listed below:
 
 1. Create a Github Repository 
 
-Keep in mind, you can't use user name and password to access Git Repo now.
-You have to use a token a SSH key for the sake of security.
+  Keep in mind, you can't use user name and password to access Git Repo now.
+  You have to use a token a SSH key for the sake of security.
 
 1. Go through Hugo's Quickstart Guide
 
 1. Go though Hugo on Github
 
-Make sure you delete public folder and add a .gitignore file.
+  Make sure you delete public folder and add a .gitignore file.
 
 1. Set up Github Action workflow
 
-Make sure you enable 'extended' if your theme needs.
+  Make sure you enable 'extended' if your theme needs.
 
 1. Go through Github Pages, and Settings
 
 1. Profit
 
-Now, you can use your favorite Editor, e.g Visual Code or Vim,  to write blogs.
-
+  Now, you can use your favorite Editor, e.g Visual Code or Vim,  to write blogs.
 
 # Summary
 
-To make this post happen, we learned and used the following concepts:
+We learned and used the following concepts so far:
+
 - Markdown
 - GitHub
 - GitHub Repository
