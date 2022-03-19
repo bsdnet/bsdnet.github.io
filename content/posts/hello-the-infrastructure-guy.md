@@ -41,7 +41,7 @@ Here are list of links I refered to make this happen:
 
 1. [Markdown Guide](https://www.markdownguide.org/)
 2. [Goldmark Mardown](https://www.markdownguide.org/tools/hugo/)
-3. [Hugo Quick Start] (https://gohugo.io/getting-started/quick-start/)
+3. [Hugo Quick Start](https://gohugo.io/getting-started/quick-start/)
 4. [Hugo on Github](https://gohugo.io/hosting-and-deployment/hosting-on-github/)
 5. [Github Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#user--organization-pages)
 6. [GitHub Actions for Hugo](https://github.com/marketplace/actions/hugo-setup)
