@@ -10,7 +10,7 @@ The objective of this post is to build a website using Hugo and Github Pages.
 
 # Steps
 
-## Create a Github account if you do not have
+## Create a Github account if you do not have one
 
 ## Create a Github Repository 
 
@@ -18,11 +18,17 @@ The objective of this post is to build a website using Hugo and Github Pages.
 
 ## Go though Hugo on Github
 
+Make sure you delete public folder and add a .gitignore file.
+
 ## Set up Github Action workflow
+
+Make sure you enable 'extended' if your theme needs.
 
 ## Go through Github Pages, and Settings
 
 ## Profit
+
+Now, you can use your favorite Editor, e.g Visual Code or Vim,  to write blogs.
 
 # Reference
 
