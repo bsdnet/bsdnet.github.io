@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://bsdnet.github.io/sitemap.xml
