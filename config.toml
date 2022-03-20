@@ -48,9 +48,9 @@ tocopen = false
   iconHeight = 35
 
   [params.profileMode]
-  enabled = false
-  title = "ExampleSite"
-  subtitle = "This is subtitle"
+  enabled = true 
+  title = "The Infra Guy"
+  subtitle = "A blog about infrastructure develoopment"
   imageUrl = "<img location>"
   imageWidth = 120
   imageHeight = 120
@@ -61,19 +61,33 @@ tocopen = false
     url = "posts"
 
     [[params.profileMode.buttons]]
-    name = "Tags"
-    url = "tags"
+    name = "Archive"
+    url = "/archive"
 
-  [params.homeInfoParams]
-  Title = "Hi there 👋"
-  Content = "Welcome to my blog"
+    [[params.profileMode.buttons]]
+    name = "Github"
+    url = "https://github.com"
 
+  [[params.socialIcons]]
+  name = "envelope"
+  url = "mailto:bsdnet@outlook.com"
+  
   [[params.socialIcons]]
   name = "github"
   url = "https://github.com/"
+  
+  [[params.socialIcons]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/cundongyang"
 
 [params.analytics.google]
 SiteVerificationTag = "XYZabc"
+
+[[menu.main]]
+identifier = "achieves"
+name = "achives"
+url = "/achieves/"
+weight = 10
 
 [[menu.main]]
 identifier = "categories"
