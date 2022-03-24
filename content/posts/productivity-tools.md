@@ -6,16 +6,22 @@ draft: false
 
 This post collects productivity tools used in my daily worklife.
 
-# Authoring Document
-1. [Excalidraw](https://excalidraw.com/)
+# Documenting
+1. [Excalidraw](https://excalidraw.com/): Draw a diagram
+2. [DokuWiki](https://www.dokuwiki.org/dokuwiki)
 
-# Reading/Writing/Searching Code
-1. [Visual Studio Code](https://code.visualstudio.com/)
-2. [SourceGraph](https://sourcegraph.com/search)
-2. [OpenGrok](https://oracle.github.io/opengrok/)
-
-# Code Repositories
-1. [github.com](github.com)
+# Programming 
+1. [Visual Studio Code](https://code.visualstudio.com/): Edit code
+2. [SourceGraph](https://sourcegraph.com/search): Search the Github
+3. [OpenGrok](https://oracle.github.io/opengrok/): Search any code, host your own
+4. [git](https://git-scm.com/): Distributed version control system
+4. [github.com](github.com): Well known code repository
+5. [Review Board](https://www.reviewboard.org/): Review Code
+6. [Gerrit Code Review](https://www.gerritcodereview.com/) 
+7. [Jekins](https://www.jenkins.io/): CI/CD tools
+8. [JIRA](https://jira.atlassian.com/): Bug Tracking
+9. [Bugzilla](https://www.bugzilla.org/) 
 
 # Linux Kernel
+1. [Linux Kernel Cross Reference](https://elixir.bootlin.com/linux/latest/source) 
 1. [Linux Kernel CVEs](https://www.linuxkernelcves.com/cves/) 
