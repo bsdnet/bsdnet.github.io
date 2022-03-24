@@ -102,7 +102,7 @@ tocopen = true
 SiteVerificationTag = "XYZabc"
 
 [[menu.main]]
-identifier = "achieves"
+identifier = "achives"
 name = "achives"
 url = "/achives/"
 weight = 10
