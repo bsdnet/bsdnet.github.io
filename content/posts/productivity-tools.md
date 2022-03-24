@@ -1,7 +1,7 @@
 ---
 title: "Productivity Tools"
 date: 2022-03-23T22:00:46-07:00
-draft: true
+draft: false
 ---
 
 This post collects productivity tools used in my daily worklife.
@@ -12,6 +12,7 @@ This post collects productivity tools used in my daily worklife.
 # Reading/Writing/Searching Code
 1. [Visual Studio Code](https://code.visualstudio.com/)
 2. [SourceGraph](https://sourcegraph.com/search)
+2. [OpenGrok](https://oracle.github.io/opengrok/)
 
 # Code Repositories
 1. [github.com](github.com)
