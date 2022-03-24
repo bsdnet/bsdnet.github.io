@@ -75,8 +75,12 @@ tocopen = true
     url = "posts"
 
     [[params.profileMode.buttons]]
-    name = "Archive"
-    url = "/archive"
+    name = "Tags"
+    url = "tags" 
+    
+    [[params.profileMode.buttons]]
+    name = "Archives"
+    url = "archives"
 
     [[params.profileMode.buttons]]
     name = "Github"
@@ -100,7 +104,13 @@ SiteVerificationTag = "XYZabc"
 [[menu.main]]
 identifier = "achieves"
 name = "achives"
-url = "/achieves/"
+url = "/achives/"
+weight = 10
+
+[[menu.main]]
+identifier = "Search"
+name = "search"
+url = "/search/"
 weight = 10
 
 [[menu.main]]
