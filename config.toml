@@ -29,11 +29,18 @@ ShowReadingTime = true
 
 # Share Buttons on Post
 ShowShareButtons = true
+
+# Addas a Previous/Next post suggestion under a single post.
 ShowPostNavLinks = true
+
+# BreadCrumb Navigation
 ShowBreadCrumbs = true
+
 ShowCodeCopyButtons = false
 disableSpecial1stPost = false
 disableScrollToTop = false
+
+# Disable comments function.
 comments = false
 hidemeta = false
 hideSummary = false
