@@ -1,6 +1,6 @@
 baseURL = 'https://bsdnet.github.io'
 languageCode = 'en-us'
-title = 'Read, Practice, Summarize, Share'
+title = 'Learn, Practice, Summarize, Share'
 theme = "PaperMod"
 paginate = 5
 enableRobotsTXT = true
@@ -64,7 +64,7 @@ tocopen = true
   [params.profileMode]
   enabled = true 
   title = "The Infra Guy"
-  subtitle = "A blog about infrastructure develoopment"
+  subtitle = "A blog about infrastructure development"
   imageUrl = "<img location>"
   imageWidth = 120
   imageHeight = 120
