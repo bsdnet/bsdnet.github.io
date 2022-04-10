@@ -10,7 +10,19 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 23 Mar 2022 22:00:46 -0700</lastBuildDate><atom:link href="https://bsdnet.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Apr 2022 18:51:57 -0700</lastBuildDate><atom:link href="https://bsdnet.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetes Container Stack</title>
+      <link>https://bsdnet.github.io/posts/kubernetes-container-stack/</link>
+      <pubDate>Sat, 09 Apr 2022 18:51:57 -0700</pubDate>
+      
+      <guid>https://bsdnet.github.io/posts/kubernetes-container-stack/</guid>
+      <description>In Kubernetes 1.24, dockershim will be removed. What does it mean, let&amp;rsquo;s take a look the container stackbefore and after dockershim removal.
+Objective To walkthrough container stack on a Kubernetes node.
+Before 1.24 release Since 1.24 release Walk-through Using the opportunity, we can walkthrough the container stack and corresponding tooling on a Kubernetes node from top to bottom.
+apiserver apiserver sits on the Kubernetes master, validates and configures data for the api objects which include pods, services, replicationcontrollers and others.</description>
+    </item>
+    
     <item>
       <title>Productivity Tools</title>
       <link>https://bsdnet.github.io/posts/productivity-tools/</link>
