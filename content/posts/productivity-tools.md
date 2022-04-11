@@ -21,6 +21,7 @@ This post collects productivity tools used in my daily worklife.
 7. [Jekins](https://www.jenkins.io/): CI/CD tools
 8. [JIRA](https://jira.atlassian.com/): Bug Tracking
 9. [Bugzilla](https://www.bugzilla.org/) 
+10.[remark](https://github.com/gnab/remark): A simple, in-browser, markdown-driven slideshow tool.
 
 # Linux Kernel
 1. [Linux Kernel Cross Reference](https://elixir.bootlin.com/linux/latest/source) 
