@@ -19,9 +19,9 @@ This post collects productivity tools used in my daily worklife.
 5. [Review Board](https://www.reviewboard.org/): Review Code
 6. [Gerrit Code Review](https://www.gerritcodereview.com/) 
 7. [Jekins](https://www.jenkins.io/): CI/CD tools
-8. [JIRA](https://jira.atlassian.com/): Bug Tracking
-9. [Bugzilla](https://www.bugzilla.org/) 
-10.[remark](https://github.com/gnab/remark): A simple, in-browser, markdown-driven slideshow tool.
+8. [JIRA](https://jira.atlassian.com/): an enterprise bug tracking system
+9. [Bugzilla](https://www.bugzilla.org/): an open source bug tracking system 
+10. [remark](https://github.com/gnab/remark): A simple, in-browser, markdown-driven slideshow tool.
 
 # Linux Kernel
 1. [Linux Kernel Cross Reference](https://elixir.bootlin.com/linux/latest/source) 
