@@ -30,7 +30,7 @@ apiserver apiserver sits on the Kubernetes master, validates and configures data
       
       <guid>https://bsdnet.github.io/posts/productivity-tools/</guid>
       <description>This post collects productivity tools used in my daily worklife.
-Documenting  Excalidraw: Draw a diagram DokuWiki  Programming  Visual Studio Code: Edit code SourceGraph: Search the Github OpenGrok: Search any code, host your own git: Distributed version control system github.com: Well known code repository Review Board: Review Code Gerrit Code Review Jekins: CI/CD tools JIRA: Bug Tracking Bugzilla 10.remark: A simple, in-browser, markdown-driven slideshow tool.  Linux Kernel  Linux Kernel Cross Reference Linux Kernel CVEs  </description>
+Documenting  Excalidraw: Draw a diagram DokuWiki  Programming  Visual Studio Code: Edit code SourceGraph: Search the Github OpenGrok: Search any code, host your own git: Distributed version control system github.com: Well known code repository Review Board: Review Code Gerrit Code Review Jekins: CI/CD tools JIRA: an enterprise bug tracking system Bugzilla: an open source bug tracking system remark: A simple, in-browser, markdown-driven slideshow tool.</description>
     </item>
     
     <item>
