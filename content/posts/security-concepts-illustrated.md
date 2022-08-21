@@ -16,8 +16,22 @@ Use diagram to illustrate critical security concepts used in modern software.
 
 Symmetric encryption uses same key for both encryption and decryption; while asymmetric encryption use different but mathematically relatedkeys for enryption and decryption.
 
-![Symmetric Encyption](/images/symmetric-encyption.png)
-![Asymmetric Encyption](/images/asymmetric-encyption.png)
+![Symmetric Encyption](/images/symmetric-encryption.png)
+![Asymmetric Encyption](/images/asymmetric-encryption.png)
+
+## Message Digest
+![Message Digest](/images/message-digest.png)
+
+## Signing 
+Sign a document and get a digital signature.
+
+![Signing](/images/signing.png)
+
+How receiver verify the digital signature?
+![Verify](/images/verify-signing.png)
+
+## Certificate
+![Certificating](/images/certificating.png)
 
 # References
 1. [Overview of Symmetric Encryption](https://www.cryptomathic.com/news-events/blog/an-overview-of-symmetric-encryption-and-the-key-lifecycle)
