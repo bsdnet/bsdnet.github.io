@@ -41,7 +41,9 @@ How receiver verify the digital signature?
 
 ## Certificate
 [Digital certificate](https://en.wikipedia.org/wiki/Public_key_certificate) is issued by a certificate authority(CA).
-Here is the digram to illustrate the process.
+Here is the digram to illustrate the process. To get a digital certificate, you need a pair of keys - public and private key.
+public key, its signature encrypted by private key, and organization information are packaged into Certificate Signing Request(CSR).
+The CSR will be approve and signed by a Certificate Authority(CA), and come back as a digital certificate. This certificate needs to be installed onto your server so that every browser client can talk with your server securely.
 
 ![Certificating](/images/certificating.png)
 
