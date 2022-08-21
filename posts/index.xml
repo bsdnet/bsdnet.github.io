@@ -10,7 +10,19 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 09 Apr 2022 18:51:57 -0700</lastBuildDate><atom:link href="https://bsdnet.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 21 Aug 2022 15:14:08 -0700</lastBuildDate><atom:link href="https://bsdnet.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Security Concepts Illustrated</title>
+      <link>https://bsdnet.github.io/posts/security-concepts-illustrated/</link>
+      <pubDate>Sun, 21 Aug 2022 15:14:08 -0700</pubDate>
+      
+      <guid>https://bsdnet.github.io/posts/security-concepts-illustrated/</guid>
+      <description>It will be helpful to understand modern software system like Kuberneteswith fundamental security concepts. For example, symmetric encryption, asymmetric encryption, public/private key, digital signature, certificate and signing.
+Objective Use diagram to illustrate critical security concepts used in modern software.
+Concepts Encryption Symmetric encryption uses same key for both encryption and decryption; while asymmetric encryption use different but mathematically relatedkeys for enryption and decryption.
+References Overview of Symmetric Encryption OpenSSL 3.0 Doc SSL certificate explained </description>
+    </item>
+    
     <item>
       <title>Kubernetes Container Stack</title>
       <link>https://bsdnet.github.io/posts/kubernetes-container-stack/</link>
