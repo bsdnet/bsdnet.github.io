@@ -30,7 +30,7 @@ apiserver apiserver sits on the Kubernetes master, validates and configures data
       
       <guid>https://bsdnet.github.io/posts/productivity-tools/</guid>
       <description>This post collects productivity tools used in my daily worklife.
-Documenting  Excalidraw: Draw a diagram DokuWiki: a Wiki for yourself  Programming  Visual Studio Code: Code editor SourceGraph: Search the code in Github OpenGrok: Search any code, host your own git: Distributed version control system github.com: Well known code repository Review Board: Code review tool Gerrit Code Review: Another code review tool: Another code review tool Jenkins: CI/CD tools JIRA: an enterprise bug tracking system Bugzilla: an open source bug tracking system remark: A simple, in-browser, markdown-driven slideshow tool.</description>
+Documenting Excalidraw: Draw a diagram DokuWiki: a Wiki for yourself Programming Visual Studio Code: Code editor SourceGraph: Search the code in Github OpenGrok: Search any code, host your own git: Distributed version control system github.com: Well known code repository Review Board: Code review tool Gerrit Code Review: Another code review tool: Another code review tool Jenkins: CI/CD tools JIRA: an enterprise bug tracking system Bugzilla: an open source bug tracking system remark: A simple, in-browser, markdown-driven slideshow tool.</description>
     </item>
     
     <item>
@@ -42,9 +42,9 @@ Documenting  Excalidraw: Draw a diagram DokuWiki: a Wiki for yourself  Programmi
       <description>This post describes how I created this blog website using a couple of hours.
 Objective The objective is to build a website using Hugo and Github Pages.
 Steps Follow the steps listed below:
-  Create a Github account if you do not have one
-  Create a Github Repository
-  Keep in mind, you can&amp;rsquo;t use user name and password to access Git Repo now. You have to use a token a SSH key for the sake of security.</description>
+Create a Github account if you do not have one
+Create a Github Repository
+Keep in mind, you can&amp;rsquo;t use user name and password to access Git Repo now. You have to use a token a SSH key for the sake of security.</description>
     </item>
     
     
