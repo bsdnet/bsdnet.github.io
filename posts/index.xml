@@ -23,11 +23,11 @@ Concepts Encryption Symmetric encryption uses same key for both encryption and d
     </item>
     
     <item>
-      <title>Kubernetes Container Stack</title>
-      <link>https://bsdnet.github.io/posts/kubernetes-container-stack/</link>
+      <title>Kubernetes Container Stack Illustrated</title>
+      <link>https://bsdnet.github.io/posts/kubernetes-container-stack-illustrated/</link>
       <pubDate>Sat, 09 Apr 2022 18:51:57 -0700</pubDate>
       
-      <guid>https://bsdnet.github.io/posts/kubernetes-container-stack/</guid>
+      <guid>https://bsdnet.github.io/posts/kubernetes-container-stack-illustrated/</guid>
       <description>In Kubernetes 1.24, dockershim will be removed. What does it mean, let&amp;rsquo;s take a look the container stackbefore and after dockershim removal.
 Objective To walkthrough container stack on a Kubernetes node.
 Before 1.24 release Since 1.24 release Walk-through Using the opportunity, we can walkthrough the container stack and corresponding tooling on a Kubernetes node from top to bottom.
