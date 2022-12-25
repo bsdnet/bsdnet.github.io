@@ -42,9 +42,9 @@ kube-controller-manager runs as a [static pod](https://kubernetes.io/docs/tasks/
 
 ## cloud-controller-manager
 
-cloud-controller-manager implements cloud-specfic control logic.
+[cloud-controller-manager](https://kubernetes.io/docs/concepts/architecture/cloud-controller/) implements cloud-specfic control logic.
 
-cloud-controller-manager is optional.
+cloud-controller-manager is optional. One example is [vSphee Cloud Controller Manager](https://github.com/kubernetes/cloud-provider-vsphere).
 
 # Node Components
 
