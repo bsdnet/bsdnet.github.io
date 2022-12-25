@@ -1,7 +1,7 @@
 ---
 title: "Kubernetes Cluster Architecture Illustrated"
 date: 2022-12-25T13:36:28-08:00
-draft: true
+draft: fasle 
 ---
 
 # Objective
