@@ -1,11 +1,10 @@
 ---
-title: "Kubernetes Container Stack"
+title: "Kubernetes Container Stack Illustrated"
 date: 2022-04-09T18:51:57-07:00
 draft: false
 ---
 
 In Kubernetes 1.24, [dockershim](https://kubernetes.io/blog/2021/11/12/are-you-ready-for-dockershim-removal/) will be removed. What does it mean, let's take a look the container stackbefore and after dockershim removal. 
-
 
 # Objective
 
