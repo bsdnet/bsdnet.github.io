@@ -42,7 +42,7 @@ See [Description](https://kubernetes-csi.github.io/docs/external-provisioner.htm
 for further details.
 
 ## vsphere-syncer
-vsphere-syncer is a container with vSphere CSI controller pod that responsible for pushing the PV, PVC and pod metadata to CNS.
+vsphere-syncer is a container with vSphere CSI controller pod that responsible for pushing the PV, PVC and pod metadata to CNS(Cloud Native Storage).
 See [Github](https://github.com/kubernetes-sigs/vsphere-csi-driver/blob/master/cmd/syncer/main.go) for further details.
 
 ## vsphere-csi-controller
