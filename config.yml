@@ -67,9 +67,11 @@ params:
     - name: envelope
       url: mailto:bsdnet@outlook.com
     - name: github
-      url: https://github.com/
+      url: https://github.com/bsdnet
     - name: linkedin
       url: https://www.linkedin.com/in/cundongyang
+    - name: discord
+      url: https://www.discord.com/
   analytics:
     google:
       SiteVerificationTag: XYZabc
