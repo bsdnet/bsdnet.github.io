@@ -10,7 +10,19 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Dec 2022 13:36:28 -0800</lastBuildDate><atom:link href="https://bsdnet.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Dec 2022 16:15:26 -0800</lastBuildDate><atom:link href="https://bsdnet.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>vSphere CSI Driver Illustrated</title>
+      <link>https://bsdnet.github.io/posts/vsphere-csi-driver-illustrated/</link>
+      <pubDate>Sun, 25 Dec 2022 16:15:26 -0800</pubDate>
+      
+      <guid>https://bsdnet.github.io/posts/vsphere-csi-driver-illustrated/</guid>
+      <description>Objective To understand how vSphere CSI driver works and is being deployed in pratice.
+vSphere CSI Driver Architecture vSphere CSI Driver Deployment vSphere CSI Driver is a Kubernetes Deployment that includes multiple containers and runs on the control plane node.
+csi-snapshotter csi-snapshotter is the sidecar container that watches for VolumeSnapshotContent create/update/delete events. csi-snapshotter works with CSI snapshot controller together implement CSI snapshot function.
+See Description and Github for further details.</description>
+    </item>
+    
     <item>
       <title>Kubernetes Cluster Architecture Illustrated</title>
       <link>https://bsdnet.github.io/posts/kubernetes-cluster-architecture-illustrated/</link>
