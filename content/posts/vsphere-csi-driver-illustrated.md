@@ -6,19 +6,19 @@ draft: false
 
 # Objective
 
-To understand how vSphere CSI driver works and is being deployed in pratice.
+To understand how [vSphere CSI driver](https://docs.vmware.com/en/VMware-vSphere-Container-Storage-Plug-in/2.0/vmware-vsphere-csp-getting-started/GUID-74AF02D7-1562-48BD-A9FE-C81A53342AC3.html) works and is being deployed.
 
 # vSphere CSI Driver Architecture 
 ![vSphere CSI Driver Architecture](/images/vsphere-csi-driver-architecture.png)
 
 # vSphere CSI Driver Deployment
 
-vSphere CSI Driver is a Kubernetes Deployment that includes multiple containers and runs
+vSphere CSI Driver is a Kubernetes [Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) that includes multiple containers and runs
 on the control plane node.
 
 ## csi-snapshotter
 
-csi-snapshotter is the sidecar container that watches for VolumeSnapshotContent
+csi-snapshotter is the sidecar container that watches for `VolumeSnapshotContent`
 create/update/delete events. csi-snapshotter works with CSI snapshot controller
 together implement CSI snapshot function.
 
@@ -42,7 +42,6 @@ See [Description](https://kubernetes-csi.github.io/docs/external-provisioner.htm
 for further details.
 
 ## vsphere-syncer
-
 vsphere-syncer is a container with vSphere CSI controller pod that responsible for pushing the PV, PVC and pod metadata to CNS.
 See [Github](https://github.com/kubernetes-sigs/vsphere-csi-driver/blob/master/cmd/syncer/main.go) for further details.
 
@@ -54,12 +53,12 @@ See [Github](https://github.com/kubernetes-sigs/vsphere-csi-driver) for further 
 
 # vSphere CSI Node DaemonSet
 
-vSphere CSI Node is a Kubernetes DaemonSet running on each worker node.
+vSphere CSI Node is a Kubernetes [DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/) running on each worker node.
 
 ## node-driver-registrar
 
 node-driver-registrar is a sidecar container that registers the CSI driver within Kubelet using
-the kubelet plugin registration machanism so that Kubelets can issue CSI `NodeGetInfo`, `NodeStageVolume`, `NodePublishVolume` calls.
+the [kubelet plugin registration machanism](https://kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/device-plugins/#device-plugin-registration) so that Kubelets can issue CSI `NodeGetInfo`, `NodeStageVolume`, `NodePublishVolume` calls.
 
 See [Description](https://kubernetes-csi.github.io/docs/node-driver-registrar.html#description) and [Github](https://github.com/kubernetes-csi/node-driver-registrar) for further details.
 
