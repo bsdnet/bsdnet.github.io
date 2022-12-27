@@ -78,6 +78,14 @@ params:
   analytics:
     google:
       SiteVerificationTag: XYZabc
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
     - identifier: archives
@@ -96,3 +104,8 @@ menu:
       name: tags
       url: /tags/
       weight: 10
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
