@@ -5,6 +5,9 @@
     <loc>https://bsdnet.github.io/categories/</loc>
     <lastmod>2022-12-25T16:15:26-08:00</lastmod>
   </url><url>
+    <loc>https://bsdnet.github.io/tags/csi/</loc>
+    <lastmod>2022-12-25T16:15:26-08:00</lastmod>
+  </url><url>
     <loc>https://bsdnet.github.io/categories/kubernetes/</loc>
     <lastmod>2022-12-25T16:15:26-08:00</lastmod>
   </url><url>
@@ -12,6 +15,12 @@
     <lastmod>2022-12-25T16:15:26-08:00</lastmod>
   </url><url>
     <loc>https://bsdnet.github.io/posts/</loc>
+    <lastmod>2022-12-25T16:15:26-08:00</lastmod>
+  </url><url>
+    <loc>https://bsdnet.github.io/tags/storage/</loc>
+    <lastmod>2022-12-25T16:15:26-08:00</lastmod>
+  </url><url>
+    <loc>https://bsdnet.github.io/tags/</loc>
     <lastmod>2022-12-25T16:15:26-08:00</lastmod>
   </url><url>
     <loc>https://bsdnet.github.io/posts/vsphere-csi-driver-illustrated/</loc>
@@ -36,7 +45,5 @@
     <lastmod>2022-03-19T10:44:39-07:00</lastmod>
   </url><url>
     <loc>https://bsdnet.github.io/archives/</loc>
-  </url><url>
-    <loc>https://bsdnet.github.io/tags/</loc>
   </url>
 </urlset>
