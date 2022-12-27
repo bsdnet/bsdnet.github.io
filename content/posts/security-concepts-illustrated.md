@@ -1,6 +1,7 @@
 ---
 title: "Security Concepts Illustrated"
 date: 2022-08-21T15:14:08-07:00
+categories: security
 draft: false
 ---
 

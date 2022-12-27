@@ -1,6 +1,7 @@
 ---
 title: "Kubernetes Container Stack Illustrated"
 date: 2022-04-09T18:51:57-07:00
+categories: kubernetes
 draft: false
 ---
 
