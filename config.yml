@@ -15,8 +15,8 @@ taxonomies:
   tag: tags
 params:
   env: production
-  title: The Infra Guy
-  description: A blog about infrastructure
+  title: The Infra Guy on Hardware, Linux, Security and Kubernetes
+  description: A blog about today's enterprise infrastructure across private and pubric cloud
   keywords:
     - Blog
     - Portfolio
@@ -51,8 +51,8 @@ params:
     iconHeight: 35
   profileMode:
     enabled: true
-    title: The Infra Guy
-    subtitle: A blog about infrastructure development
+    title: The Infra Guy on Hardware, Linux, Security and Kubernetes
+    subtitle: A blog about today's enterprise infrastructure across private and public cloud
     imageUrl: <img location>
     imageWidth: 120
     imageHeight: 120
