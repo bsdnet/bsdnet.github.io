@@ -10,6 +10,9 @@ buildExpired: false
 minify:
   disableXML: true
   minifyOutput: true
+taxonomies:
+  category: categories
+  tag: tags
 params:
   env: production
   title: The Infra Guy
