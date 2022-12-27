@@ -1,7 +1,8 @@
 ---
 title: "vSphere CSI Driver Illustrated"
 date: 2022-12-25T16:15:26-08:00
-categories: kubernetes
+categories: [kubernetes]
+tags: [csi, storage]
 draft: false
 ---
 
