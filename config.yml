@@ -60,10 +60,6 @@ params:
     buttons:
       - name: Posts
         url: posts
-      - name: Tags
-        url: tags
-      - name: Archives
-        url: archives
       - name: Github
         url: https://github.com
   socialIcons:
