@@ -64,10 +64,10 @@ params:
     enabled: true
     title: The Infra Guy
     subtitle: "A blog about today's enterprise infrastructure across private and public cloud - Hardware, Linux, Security and Kubernetes"
-    imageUrl: <img location>
+    imageUrl: /sleepinggiant.jpeg 
     imageWidth: 120
     imageHeight: 120
-    imageTitle: my image
+    imageTitle: "Sleeping Giant" 
     buttons:
       - name: Posts
         url: posts
@@ -82,7 +82,7 @@ params:
     - name: linkedin
       url: https://www.linkedin.com/in/cundongyang
     - name: discord
-      url: https://www.discord.com/
+      url: https://discordapp.com/users/769448808442363945
 
   analytics:
     google:
@@ -106,15 +106,15 @@ menu:
     - identifier: tags
       name: tags
       url: /tags/
-      weight: 10
+      weight: 20 
     - identifier: archives
       name: archives
       url: /archives/
-      weight: 10
+      weight: 30
     - identifier: Search
       name: search
       url: /search/
-      weight: 10
+      weight: 40
 
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
