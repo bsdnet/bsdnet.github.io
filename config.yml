@@ -3,16 +3,20 @@ languageCode: en-us
 title: Learn, Practice, Summarize, Share
 theme: PaperMod
 paginate: 5
+
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
+
 minify:
   disableXML: true
   minifyOutput: true
+
 taxonomies:
   category: categories
   tag: tags
+
 params:
   env: production
   title: The Infra Guy on Hardware, Linux, Security and Kubernetes
@@ -21,17 +25,21 @@ params:
     - Blog
     - Portfolio
     - PaperMod
-  author: Roy Yang
+  author: "Roy Yang"
   images:
     - <link or path of image for opengraph, twitter-cards>
   DateFormat: January 2, 2006
   defaultTheme: auto
   disableThemeToggle: false
+
   ShowReadingTime: true
   ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: false
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
   disableSpecial1stPost: false
   disableScrollToTop: false
   comments: false
@@ -39,16 +47,19 @@ params:
   hideSummary: false
   showtoc: true
   tocopen: true
+
   assets:
     favicon: /favicon_io/favicon.ico
     favicon16x16: /favicon_io/favicon-16x16.png
     favicon32x32: /favicon_io/favicon-32x32.png
     apple_touch_icon: /favicon_io/apple-touch-icon.png
     safari_pinned_tab: <link / abs url>
+
   label:
     text: Home
     icon: /favicon_io/apple-touch-icon.png
     iconHeight: 35
+
   profileMode:
     enabled: true
     title: The Infra Guy
@@ -62,6 +73,7 @@ params:
         url: posts
       - name: Github
         url: https://github.com
+
   socialIcons:
     - name: envelope
       url: mailto:bsdnet@outlook.com
@@ -71,9 +83,11 @@ params:
       url: https://www.linkedin.com/in/cundongyang
     - name: discord
       url: https://www.discord.com/
+
   analytics:
     google:
       SiteVerificationTag: XYZabc
+
   fuseOpts:
     isCaseSensitive: false
     shouldSort: true
@@ -82,16 +96,9 @@ params:
     threshold: 0.4
     minMatchCharLength: 0
     keys: ["title", "permalink", "summary", "content"]
+
 menu:
   main:
-    - identifier: archives
-      name: archives
-      url: /archives/
-      weight: 10
-    - identifier: Search
-      name: search
-      url: /search/
-      weight: 10
     - identifier: categories
       name: categories
       url: /categories/
@@ -100,7 +107,27 @@ menu:
       name: tags
       url: /tags/
       weight: 10
-outputs:
+    - identifier: archives
+      name: archives
+      url: /archives/
+      weight: 10
+    - identifier: Search
+      name: search
+      url: /search/
+      weight: 10
+
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai
+
+  outputs:
   home:
     - HTML
     - RSS
