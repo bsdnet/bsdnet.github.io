@@ -10,7 +10,19 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Dec 2022 16:15:26 -0800</lastBuildDate><atom:link href="https://bsdnet.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 May 2023 14:17:22 -0700</lastBuildDate><atom:link href="https://bsdnet.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetes Service Illustrated</title>
+      <link>https://bsdnet.github.io/posts/kubernetes-service-illustrated/</link>
+      <pubDate>Sat, 13 May 2023 14:17:22 -0700</pubDate>
+      
+      <guid>https://bsdnet.github.io/posts/kubernetes-service-illustrated/</guid>
+      <description>Objective To understand the Service concept in Kubernetes.
+Concepts The following concepts are critical to understand the Service API in Kubernetes.
+Service Service is an abstraction to expose groups of Pods over a newtwork. Pods are selected via Labels and Selectors. Each Service object defines a logic set of Endpoints or EndpointSlice by Kubernetes control plane automatically.
+There are 4 Services types: ClusterIP, NodePort, LoadBalancer and ExternalName. Refer this article for illustration.</description>
+    </item>
+    
     <item>
       <title>vSphere CSI Driver Illustrated</title>
       <link>https://bsdnet.github.io/posts/vsphere-csi-driver-illustrated/</link>
