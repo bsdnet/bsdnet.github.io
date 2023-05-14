@@ -17,6 +17,8 @@ The following concepts are critical to understand the Service API in Kubernetes.
 
 There are 4 [Services types](https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types): ClusterIP, NodePort, LoadBalancer and ExternalName. Refer [this article](https://nigelpoulton.com/explained-kubernetes-service-ports/) for illustration.
 
+![Kubernetes Services](/images/kubernetes-service.png)
+
 ## ClusterIP
 
 CluterIP is the default Service type and exposes the Service within the cluster ONLY. The [IP address](https://kubernetes.io/docs/concepts/services-networking/cluster-ip-allocation/) can be statically or dynamically chosen from `service-cluster-ip-range` configured for the Kubernetes API server.
@@ -50,7 +52,7 @@ corresponds to `containerPort` in the Pod spec. `port` in `Sevice` spec is the p
 
 ## Service, Load Balancer, Ingress
 
-Service is the main approach to [expose applications running either within or outside of the cluster](https://kubernetes.io/docs/tutorials/services/connect-applications-service/).
+[Service](https://github.com/kubernetes/kubernetes/blob/master/pkg/apis/core/types.go#L3999) is the main approach to [expose applications running either within or outside of the cluster](https://kubernetes.io/docs/tutorials/services/connect-applications-service/).
 Service can be exposed by LoadBalancer by [creating an external Load Balancer](https://kubernetes.io/docs/tasks/access-application-cluster/create-external-load-balancer/) such as F5. While [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/) is one way to manage external access to the Service in a Kubernete cluster via HTTP or HTTPS protocol.
  
 
