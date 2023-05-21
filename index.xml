@@ -10,7 +10,22 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 13 May 2023 14:17:22 -0700</lastBuildDate><atom:link href="https://bsdnet.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 20 May 2023 13:36:28 -0800</lastBuildDate><atom:link href="https://bsdnet.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetes Cluster Architecture Illustrated</title>
+      <link>https://bsdnet.github.io/posts/kubernetes-cluster-architecture-illustrated/</link>
+      <pubDate>Sat, 20 May 2023 13:36:28 -0800</pubDate>
+      
+      <guid>https://bsdnet.github.io/posts/kubernetes-cluster-architecture-illustrated/</guid>
+      <description>Objective To illustrate kubernetes cluster architecture and understand critical Kubernetes components.
+Cluster Architecture Control Plane Components Control Plane components run on one or mulptile control plane nodes.
+kube-apiserver kube-apiserver implements the Kubernetes API, and is designed to scale horizontally.
+kube-apiserver runs as a static pod.
+etcd etcd is a consistent and highly-available key value store used for storing Kubernetes&amp;rsquo; cluster data.
+etcd runs as a static pod.
+kube-scheduler kube-scheduler watches for newly created Pods and selects a node for Pods to run on.</description>
+    </item>
+    
     <item>
       <title>Kubernetes Service Illustrated</title>
       <link>https://bsdnet.github.io/posts/kubernetes-service-illustrated/</link>
@@ -34,21 +49,6 @@ vSphere CSI Driver Architecture vSphere CSI Driver Deployment vSphere CSI Driver
 csi-snapshotter csi-snapshotter is the sidecar container that watches for VolumeSnapshotContent create/update/delete events. csi-snapshotter works with CSI snapshot controller together implement CSI snapshot function.
 See Description and Github for further details.
 csi-resizer csi-resizer is a sidecar container that watches the Kubernetes API server for PersistentVolumeClaim updates and triggers ControllerExpandVolume operation.</description>
-    </item>
-    
-    <item>
-      <title>Kubernetes Cluster Architecture Illustrated</title>
-      <link>https://bsdnet.github.io/posts/kubernetes-cluster-architecture-illustrated/</link>
-      <pubDate>Sun, 25 Dec 2022 13:36:28 -0800</pubDate>
-      
-      <guid>https://bsdnet.github.io/posts/kubernetes-cluster-architecture-illustrated/</guid>
-      <description>Objective To illustrate kubernetes cluster architecture and understand critical Kubernetes components.
-Kubernetes Cluster Architecture Control Plane Components Control Plane components run on one or mulptile control plane nodes.
-kube-apiserver kube-apiserver implements the Kubernetes API, and is designed to scale horizontally.
-kube-apiserver runs as a static pod.
-etcd etcd is a consistent and highly-available key value store used for storing Kubernetes&amp;rsquo; cluster data.
-etcd runs as a static pod.
-kube-scheduler kube-scheduler watches for newly created Pods and selects a node for Pods to run on.</description>
     </item>
     
     <item>
