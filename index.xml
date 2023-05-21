@@ -10,7 +10,19 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 May 2023 13:36:28 -0800</lastBuildDate><atom:link href="https://bsdnet.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 21 May 2023 08:05:52 -0700</lastBuildDate><atom:link href="https://bsdnet.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Which Node Is Pod Running On</title>
+      <link>https://bsdnet.github.io/posts/which-node-is-pod-running-on/</link>
+      <pubDate>Sun, 21 May 2023 08:05:52 -0700</pubDate>
+      
+      <guid>https://bsdnet.github.io/posts/which-node-is-pod-running-on/</guid>
+      <description>Objective To understand which node your pod is running on.
+Overview Various applications exist in a Kubernetes clusters: Linux system daemons, Kubernetes components, Kubernetes Addons and various Kubernetes workloads.
+To bind applications to a Kubernete nodes, there are two ways:
+Static Binding Dynamic Scheduling Static Binding Critical Linux system daemons like systemd, chrony, network manager, kubelet are required to run on each node as standalone programs. Kubernetes control plane components are hosted in static pods, which are managed directly by the kubelet daemon using manifest files under /etc/kubernetes/manifests.</description>
+    </item>
+    
     <item>
       <title>Kubernetes Cluster Illustrated</title>
       <link>https://bsdnet.github.io/posts/kubernetes-cluster-architecture-illustrated/</link>
