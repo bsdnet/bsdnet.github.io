@@ -1,5 +1,5 @@
 ---
-title: "Kubernetes Cluster Architecture Illustrated"
+title: "Kubernetes Cluster Illustrated"
 date: 2023-05-20T13:36:28-08:00
 categories: kubernetes
 draft: fasle 
