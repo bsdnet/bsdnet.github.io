@@ -1,6 +1,6 @@
 ---
 title: "Kubernetes Cluster Architecture Illustrated"
-date: 2022-12-25T13:36:28-08:00
+date: 2023-05-20T13:36:28-08:00
 categories: kubernetes
 draft: fasle 
 ---
@@ -9,7 +9,7 @@ draft: fasle
 
 To illustrate kubernetes cluster architecture and understand critical Kubernetes components.
 
-# Kubernetes Cluster Architecture
+# Cluster Architecture
 
 ![Kubernetes Cluster Architecture](/images/kubernetes-cluster-architecture.png)
 
@@ -67,6 +67,14 @@ kube-proxy usually runs as a [DaemonSet](https://kubernetes.io/docs/concepts/wor
 
 Container runtime such as [containerd](https://github.com/containerd/containerd), [CRI-O](https://github.com/cri-o/cri-o) is reponsible for running containers.
 
+# Kubernete Nodes 
+
+A Kubernetes cluster consists of two kinds of nodes: control plane nodes and worker nodes.
+
+Node will run on hardware, virtual platform like vSphere and KVM, cloud platform like Amazon AWS, MicrsoftAzure, Google GCP. Linux is the common Operating System running Kubernetes. Binaries and libraries are built on top of Linux Kernel, e.g Systemd, Kubelet, Containerd. Containerd/Runc is the most common container runtime. etcd, kube-apiserver, kube-scheduler, kube-control-manager, cloud-control-manager usually run as static pods on control plane nodes. kube-proxy runs as a daemonset. 
+
+![Kubernetes Nodes](/images/kubernetes-node.png)
+   
 # References
 
 * [Kubernetes Components](https://kubernetes.io/docs/concepts/overview/components/)
