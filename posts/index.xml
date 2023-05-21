@@ -17,10 +17,10 @@
       <pubDate>Sun, 21 May 2023 08:05:52 -0700</pubDate>
       
       <guid>https://bsdnet.github.io/posts/which-node-is-pod-running-on/</guid>
-      <description>Objective To understand which node your pod is running on.
-Overview Various applications exist in a Kubernetes clusters: Linux system daemons, Kubernetes components, Kubernetes Addons and various Kubernetes workloads.
-To bind applications to a Kubernete nodes, there are two ways:
-Static Binding Dynamic Scheduling Static Binding Critical Linux system daemons like systemd, chrony, network manager, kubelet are required to run on each node as standalone programs. Kubernetes control plane components are hosted in static pods, which are managed directly by the kubelet daemon using manifest files under /etc/kubernetes/manifests.</description>
+      <description>Objective To understand which Kubernetes node a pod is running on.
+Overview Various applications can be deployed in a Kubernetes cluster: Linux system daemons, Kubernetes components, Kubernetes Addons and various Kubernetes workloads.
+To bind applications to a Kubernete node, there are two ways:
+Static Binding Dynamic Scheduling Static Binding Critical Linux system daemons such as systemd, chrony, Network Manager, kubelet, Container Runtimes are required to run on each node as standalone programs.</description>
     </item>
     
     <item>
