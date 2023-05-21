@@ -20,10 +20,8 @@
       <description>Objective To illustrate kubernetes cluster architecture and understand critical Kubernetes components.
 Cluster Architecture Control Plane Components Control Plane components run on one or mulptile control plane nodes.
 kube-apiserver kube-apiserver implements the Kubernetes API, and is designed to scale horizontally.
-kube-apiserver runs as a static pod.
-etcd etcd is a consistent and highly-available key value store used for storing Kubernetes&amp;rsquo; cluster data.
-etcd runs as a static pod.
-kube-scheduler kube-scheduler watches for newly created Pods and selects a node for Pods to run on.</description>
+kube-apiserver runs as a static pod or systemd daemon, configured using Pod specification or systemd unit and configuration file in /etc.
+etcd etcd is a consistent and highly-available key value store used for storing Kubernetes&amp;rsquo; cluster data.</description>
     </item>
     
     <item>
