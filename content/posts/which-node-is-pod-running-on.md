@@ -5,40 +5,39 @@ draft: false
 ---
 # Objective
 
-To understand which node your pod is running on.
+To understand which Kubernetes [node](https://kubernetes.io/docs/concepts/architecture/nodes/) a [pod](https://kubernetes.io/docs/concepts/workloads/pods/) is running on.
 
 # Overview
 
-Various applications exist in a Kubernetes clusters: Linux system
+Various applications can be deployed in a Kubernetes cluster: Linux system
 daemons, Kubernetes components, Kubernetes Addons and various Kubernetes workloads.
 
-To bind applications to a Kubernete nodes, there are two ways:
+To bind applications to a Kubernete node, there are two ways:
 
 *  Static Binding
 *  Dynamic Scheduling
 
 ## Static Binding 
 
-Critical Linux system daemons like systemd, chrony, network manager, kubelet are required to run on each node as standalone programs. Kubernetes control plane components are hosted in [static pods](https://kubernetes.io/docs/tasks/configure-pod-container/static-pod/), which are managed directly by the kubelet daemon using [manifest files](https://kubernetes.io/docs/concepts/workloads/pods/ephemeral-containers/) under `/etc/kubernetes/manifests`. Static pod can not refer to other objects like Service Account, ConfigMap, Secret, etc, and do not support [ephemeral containers](https://kubernetes.io/docs/concepts/workloads/pods/ephemeral-containers/).
+Critical Linux system daemons such as [systemd](https://www.freedesktop.org/wiki/Software/systemd/), [chrony](https://chrony.tuxfamily.org/), [Network Manager](https://networkmanager.dev/), [kubelet](https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/), [Container Runtimes](https://kubernetes.io/docs/setup/production-environment/container-runtimes/) are required to run on each node as standalone programs. Kubernetes control plane components are running in [static pods](https://kubernetes.io/docs/tasks/configure-pod-container/static-pod/), which are managed directly by the kubelet daemon using [manifest files](https://kubernetes.io/docs/concepts/workloads/pods/ephemeral-containers/) under `/etc/kubernetes/manifests`. Static pod can not refer to other Kubernetes objects like Service Account, ConfigMap, Secret, etc, and do not support [ephemeral containers](https://kubernetes.io/docs/concepts/workloads/pods/ephemeral-containers/).
 
-To make system daemons or static pods run on each node is to preload or install them into OS image before creating a node instance. The preloading usually happensstaticaly before the cluster is formed.
+To make system daemons or static pods run on a particular node is to preload or install them into OS image before creating a node instance. The preloading usually happens staticaly before the cluster is formed.
 
 ![Kubernetes System Applications](/images/kubernetes-system-applications.png)
 
 ## Dynamic Scheduling 
 
-The kube-scheduler dynamically schedules pods to a worker node by considering thepod's preferences specified in PodSpec and the node's [labels](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/). Node labels can be attached manually or well-known labels populated by kubelet.
+The kube-scheduler dynamically schedules pods to a worker node by considering the pod's preferences specified in PodSpec and the node's [labels](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/). Node labels can be attached manually or be well-known labels populated by kubelet.
 
 ## nodeSelector
 
-`nodeSelector` is the simplest way to let Kubernetes know your node preference. Just add the `nodeSelector` field to Pod specificiation and specifiy the node labels you want the target node to have.
+`nodeSelector` is the simplest way to let Kubernetes know your node preference. Add the `nodeSelector` field to Pod specificiation and specify the node labels you want the target node to have.
 
 ![Kubernetes Application NodeSelector](/images/kubernetes-application-nodeselector.png)
 
-
 ## Node affinity 
 
-Node affinity is similar to `nodeSelector`, allowing Pod to be scheduled on based on node labels. There are two types of node affinity: `requiredDuringSchedulingIgnoredDuringExecution` and `preferredDuringSchedulingIgnoredDuringExecution`. Node affinities can be specified using `.spec.affinity.nodeAffinity` field in Pod spec.
+Node affinity is similar to `nodeSelector`, allowing Pod to be scheduled based on node labels. There are two types of node affinity: `requiredDuringSchedulingIgnoredDuringExecution` and `preferredDuringSchedulingIgnoredDuringExecution`. Node affinity can be specified using `.spec.affinity.nodeAffinity` field in Pod spec.
 
 ![Kubernetes Application NodeAffinity](/images/kubernetes-application-nodeaffinity.png)
 
