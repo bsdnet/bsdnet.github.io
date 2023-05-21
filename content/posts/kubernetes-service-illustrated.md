@@ -17,13 +17,13 @@ The following concepts are critical to understand the Service API in Kubernetes.
 
 There are 4 [Services types](https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types): ClusterIP, NodePort, LoadBalancer and ExternalName. Refer [this article](https://nigelpoulton.com/explained-kubernetes-service-ports/) for illustration.
 
-![Kubernetes Services](/images/kubernetes-service.png)
-
 ## ClusterIP
 
 CluterIP is the default Service type and exposes the Service within the cluster ONLY. The [IP address](https://kubernetes.io/docs/concepts/services-networking/cluster-ip-allocation/) can be statically or dynamically chosen from `service-cluster-ip-range` configured for the Kubernetes API server.
 
 Key fields in the specification is: `type`, `selector`, `clusterIP`, `port`, `protocol`, `targetPort`.
+
+![Kubernetes Service ClusterIP](/images/kubernetes-service-clusterip.png)
 
 ## NodePort
 
@@ -32,11 +32,15 @@ Node's IP and `nodePort` outside of the Kubernete cluster. Kubernetes control pl
 
 Key fields in the specification is: `type`, `selector`, `port`, `targetPort`, and `nodePort`.
 
+![Kubernetes Service NodePort](/images/kubernetes-service-nodeport.png)
+
 ## LoadBalancer
 
 [LoadBalancer](https://kubernetes.io/docs/concepts/services-networking/service/#loadbalancer) exposes the Service externally using a load blancer, which directs traffic from a `loadBalancerIP` to `clusterIP`.
 
 Key fields in the specification is: `type`, `clusterIP`, `selector`, `protocol`, `port` and `targetPort`
+
+![Kubernetes Service LoadBalancer](/images/kubernetes-service-loadbalancer.png)
 
 ## ExternalName
 
@@ -44,10 +48,12 @@ Key fields in the specification is: `type`, `clusterIP`, `selector`, `protocol`,
 
 Key fields in the specification is: `type` and `externalName`.
 
+![Kubernetes Service ExternalName](/images/kubernetes-service-externalname.png)
+
 ## Ports
 
-[Port definition] is critical to understand the Service.
-`containerPort` or `name` in `Pod` spec is the port the application Pod actively listens. `targetPort` in `Service` spec
+Port definition is critical to understand the Service.
+`containerPort` or `name` in `Pod` spec is the port the application in the pod actively listens. `targetPort` in `Service` spec
 corresponds to `containerPort` in the Pod spec. `port` in `Sevice` spec is the port used by either internal Pod or external services, while `nodePort` is the port on each Node to access the service.
 
 ## Service, Load Balancer, Ingress
