@@ -30,7 +30,15 @@ tune the performance of Kubernetes node.
 # Disk I/O
 - [Dealing with Memory and Disk
   I/O](https://www.yugabyte.com/blog/linux-performance-tuning-memory-disk-io/)
-
+- [Filesystem Peformance Tuning for EXT4](https://support.cpanel.net/hc/en-us/articles/360053811353-Filesystem-Performance-Tuning-for-EXT-4)
+- [Fast disk I/O with ext4
+  HOWTO](https://www.linuxliteos.com/forums/tutorials/fast-disk-io-with-ext4-howto/)
+- [EXT4 Filesystem Tuning
+  Benchmarks](https://www.phoronix.com/review/ext4_linux35_tuning)
+- [PostgreSQL Filesystem
+  Tuning](https://kb.techtaco.org/linux/postgresql/postgresql_file_system_tuning/)
+- [BeeGFS: Tips for Storage Server
+  Tuning](https://www.beegfs.io/wiki/StorageServerTuning)
 # Networking
 
 - [Tuning 10Gb NICs highway to
