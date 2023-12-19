@@ -19,7 +19,7 @@ There are 4 [Services types](https://kubernetes.io/docs/concepts/services-networ
 
 ## ClusterIP
 
-CluterIP is the default Service type and exposes the Service <mark>within the cluster ONLY</mark>. The [IP address](https://kubernetes.io/docs/concepts/services-networking/cluster-ip-allocation/) can be statically or dynamically chosen from `service-cluster-ip-range` configured for the Kubernetes API server.
+CluterIP is the default Service type and exposes the Service **within the cluster ONLY**. The [IP address](https://kubernetes.io/docs/concepts/services-networking/cluster-ip-allocation/) can be statically or dynamically chosen from `service-cluster-ip-range` configured for the Kubernetes API server.
 
 Key fields in the specification is: `type`, `selector`, `clusterIP`, `port`, `protocol`, `targetPort`.
 
@@ -66,4 +66,5 @@ While [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/
 
 # Reference
 *  [Explained: Kubernete Service Ports](https://nigelpoulton.com/explained-kubernetes-service-ports/)
+*  [Understanding Kubernetes service & ingress networking](https://www.cortex.io/post/understanding-kubernetes-services-ingress-networking)
 *  [Service](https://kubernetes.io/docs/concepts/services-networking/service/) 
