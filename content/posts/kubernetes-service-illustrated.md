@@ -19,7 +19,7 @@ There are 4 [Services types](https://kubernetes.io/docs/concepts/services-networ
 
 ## ClusterIP
 
-CluterIP is the default Service type and exposes the Service within the cluster ONLY. The [IP address](https://kubernetes.io/docs/concepts/services-networking/cluster-ip-allocation/) can be statically or dynamically chosen from `service-cluster-ip-range` configured for the Kubernetes API server.
+CluterIP is the default Service type and exposes the Service <mark>within the cluster ONLY</mark>. The [IP address](https://kubernetes.io/docs/concepts/services-networking/cluster-ip-allocation/) can be statically or dynamically chosen from `service-cluster-ip-range` configured for the Kubernetes API server.
 
 Key fields in the specification is: `type`, `selector`, `clusterIP`, `port`, `protocol`, `targetPort`.
 
@@ -59,7 +59,9 @@ corresponds to `containerPort` in the Pod spec. `port` in `Sevice` spec is the p
 ## Service, Load Balancer, Ingress
 
 [Service](https://github.com/kubernetes/kubernetes/blob/master/pkg/apis/core/types.go#L3999) is the main approach to [expose applications running either within or outside of the cluster](https://kubernetes.io/docs/tutorials/services/connect-applications-service/).
-Service can be exposed by LoadBalancer by [creating an external Load Balancer](https://kubernetes.io/docs/tasks/access-application-cluster/create-external-load-balancer/) such as F5. While [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/) is one way to manage external access to the Service in a Kubernete cluster via HTTP or HTTPS protocol.
+Service can be exposed by LoadBalancer by [creating an external Load Balancer](https://kubernetes.io/docs/tasks/access-application-cluster/create-external-load-balancer/) such as F5. Service usually works at Layer 4 within cluster. 
+
+While [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/) is one way to manage external access to the Service in a Kubernete cluster via HTTP or HTTPS protocol. An Ingress may be configured to give Services externally-reachable URLs, load blance traffice, terminate SSL/TLS, and ususlly require an [ingress controller](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/) such as [Istio Ingress](https://istio.io/latest/docs/tasks/traffic-management/ingress/kubernetes-ingress/). Ingress usually works at Layer 7. 
  
 
 # Reference
