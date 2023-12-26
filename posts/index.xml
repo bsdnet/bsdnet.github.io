@@ -1,55 +1,50 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Learn, Practice, Summarize, Share</title>
     <link>https://bsdnet.github.io/posts/</link>
     <description>Recent content in Posts on Learn, Practice, Summarize, Share</description>
     <image>
+      <title>Learn, Practice, Summarize, Share</title>
       <url>https://bsdnet.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://bsdnet.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 25 Dec 2023 21:41:59 -0800</lastBuildDate><atom:link href="https://bsdnet.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 25 Dec 2023 21:41:59 -0800</lastBuildDate>
+    <atom:link href="https://bsdnet.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kubernetes Control Plane HA Implementation</title>
       <link>https://bsdnet.github.io/posts/kubernetes-cp-ha-implementation/</link>
       <pubDate>Mon, 25 Dec 2023 21:41:59 -0800</pubDate>
-      
       <guid>https://bsdnet.github.io/posts/kubernetes-cp-ha-implementation/</guid>
       <description>Objective To understand how Kubernetes HA is implemented, especially the stacked etcd topology.
 Kubernetes Control Plane HA Architecture Concepts In addition to three control plane nodes, HAProxy and Keepalived are the key components to implement Highly Available Kubernetes Control Plane.
 HAProxy HAProxy is a popular open source TCP/HTTP Loadbalancer and Proxy solution. HAProy balance the traffic among Kubernetes Control Plane nodes via Control Plane VIP. However, if a single HAProxy instance is deployed, Kubernetes Control Plane will become unavailable once it failed.</description>
     </item>
-    
     <item>
       <title>Linux Performance Tuning</title>
       <link>https://bsdnet.github.io/posts/linux-performance-tuning/</link>
       <pubDate>Wed, 09 Aug 2023 17:41:00 +0000</pubDate>
-      
       <guid>https://bsdnet.github.io/posts/linux-performance-tuning/</guid>
       <description>This post will collect all articles related to Linux Performance Tuning.
 Objective To understand the performance tuning by going deeper and provide guidance to tune the performance of Kubernetes node.
 System Linux Performance Performance Tunning ArchLinux: Improving perfomance Linux Performance Tuning Low latency tuning guide Hadoop Tuning Guide for AMD EPYC Kafka Performance HPC Cluster Tuning on 3rd Gen Intel Xeon Processors Intel Extension for Pytorch CPU 3 tips for Linux process performance improvement with priority and affinity Memory Disk I/O Dealing with Memory and Disk I/O Filesystem Peformance Tuning for EXT4 Fast disk I/O with ext4 HOWTO EXT4 Filesystem Tuning Benchmarks PostgreSQL Filesystem Tuning BeeGFS: Tips for Storage Server Tuning Linux OS Tuning for MySQL Optimizing Your NFS Filesystem Linux kernel tuning for GlusterFS Linux disk performance tuning Intel: Tuning the performance of Intel SSD Networking Broadcom: TCP Performance Tuning SUSE: Tuning the network DPDK: Get best performance with Intel NIC Linux Performance Tuning Guide for Intel NIC Tuning 10Gb NICs highway to hell </description>
     </item>
-    
     <item>
       <title>Which Node Is Pod Running On</title>
       <link>https://bsdnet.github.io/posts/which-node-is-pod-running-on/</link>
       <pubDate>Sun, 21 May 2023 08:05:52 -0700</pubDate>
-      
       <guid>https://bsdnet.github.io/posts/which-node-is-pod-running-on/</guid>
       <description>Objective To understand which Kubernetes node a pod is running on.
 Overview Various applications can be deployed in a Kubernetes cluster: Linux system daemons, Kubernetes components, Kubernetes Addons and various Kubernetes workloads.
 To bind applications to a Kubernete node, there are two ways:
 Static Binding Dynamic Scheduling Static Binding Critical Linux system daemons such as systemd, chrony, Network Manager, kubelet, Container Runtimes are required to run on each node as standalone programs.</description>
     </item>
-    
     <item>
       <title>Kubernetes Cluster Illustrated</title>
       <link>https://bsdnet.github.io/posts/kubernetes-cluster-architecture-illustrated/</link>
       <pubDate>Sat, 20 May 2023 13:36:28 -0800</pubDate>
-      
       <guid>https://bsdnet.github.io/posts/kubernetes-cluster-architecture-illustrated/</guid>
       <description>Objective To illustrate kubernetes cluster architecture and understand critical Kubernetes components.
 Cluster Architecture Control Plane Components Control Plane components run on one or mulptile control plane nodes.
@@ -57,24 +52,20 @@ kube-apiserver kube-apiserver implements the Kubernetes API, and is designed to 
 kube-apiserver runs as a static pod or systemd daemon, configured using Pod specification or systemd unit and configuration file in /etc.
 etcd etcd is a consistent and highly-available key value store used for storing Kubernetes&amp;rsquo; cluster data.</description>
     </item>
-    
     <item>
       <title>Kubernetes Service Illustrated</title>
       <link>https://bsdnet.github.io/posts/kubernetes-service-illustrated/</link>
       <pubDate>Sat, 13 May 2023 14:17:22 -0700</pubDate>
-      
       <guid>https://bsdnet.github.io/posts/kubernetes-service-illustrated/</guid>
       <description>Objective To understand the Service concept in Kubernetes.
 Concepts The following concepts are critical to understand the Service API in Kubernetes.
 Service Service is an abstraction to expose groups of Pods over a newtwork. Pods are selected via Labels and Selectors. Each Service object defines a logic set of Endpoints or EndpointSlice by Kubernetes control plane automatically.
 There are 4 Services types: ClusterIP, NodePort, LoadBalancer and ExternalName. Refer this article for illustration.</description>
     </item>
-    
     <item>
       <title>vSphere CSI Driver Illustrated</title>
       <link>https://bsdnet.github.io/posts/vsphere-csi-driver-illustrated/</link>
       <pubDate>Sun, 25 Dec 2022 16:15:26 -0800</pubDate>
-      
       <guid>https://bsdnet.github.io/posts/vsphere-csi-driver-illustrated/</guid>
       <description>Objective To understand how vSphere CSI driver works and is being deployed.
 vSphere CSI Driver Architecture vSphere CSI Driver Deployment vSphere CSI Driver is a Kubernetes Deployment that includes multiple containers and runs on the control plane node.
@@ -82,45 +73,37 @@ csi-snapshotter csi-snapshotter is the sidecar container that watches for Volume
 See Description and Github for further details.
 csi-resizer csi-resizer is a sidecar container that watches the Kubernetes API server for PersistentVolumeClaim updates and triggers ControllerExpandVolume operation.</description>
     </item>
-    
     <item>
       <title>Security Concepts Illustrated</title>
       <link>https://bsdnet.github.io/posts/security-concepts-illustrated/</link>
       <pubDate>Sun, 21 Aug 2022 15:14:08 -0700</pubDate>
-      
       <guid>https://bsdnet.github.io/posts/security-concepts-illustrated/</guid>
       <description>It will be helpful to understand modern software system like Kuberneteswith fundamental security concepts. For example, symmetric encryption, asymmetric encryption, public/private key, digital signature, certificate and signing.
 Objective Use diagram to illustrate critical security concepts used in modern software.
 Concepts Encryption Symmetric encryption uses same key for both encryption and decryption; while asymmetric encryption use different but mathematically relatedkeys for enryption and decryption. Symmetric Encyption can be illustrated in the following diagram: Asymmetric Encryption can be represented as follows: Message Digest A message digest is a fixed size numeric representation of the conents of a message, computed by a hash function.</description>
     </item>
-    
     <item>
       <title>Kubernetes Container Stack Illustrated</title>
       <link>https://bsdnet.github.io/posts/kubernetes-container-stack-illustrated/</link>
       <pubDate>Sat, 09 Apr 2022 18:51:57 -0700</pubDate>
-      
       <guid>https://bsdnet.github.io/posts/kubernetes-container-stack-illustrated/</guid>
       <description>In Kubernetes 1.24, dockershim will be removed. What does it mean, let&amp;rsquo;s take a look the container stackbefore and after dockershim removal.
 Objective To walkthrough container stack on a Kubernetes node.
 Before 1.24 release Since 1.24 release Walk-through Using the opportunity, we can walkthrough the container stack and corresponding tooling on a Kubernetes node from top to bottom.
 apiserver apiserver sits on the Kubernetes master, validates and configures data for the api objects which include pods, services, replicationcontrollers and others.</description>
     </item>
-    
     <item>
       <title>Productivity Tools</title>
       <link>https://bsdnet.github.io/posts/productivity-tools/</link>
       <pubDate>Wed, 23 Mar 2022 22:00:46 -0700</pubDate>
-      
       <guid>https://bsdnet.github.io/posts/productivity-tools/</guid>
       <description>This post collects productivity tools used in my daily worklife.
 Documenting Excalidraw: Draw a diagram DokuWiki: a Wiki for yourself Programming Visual Studio Code: Code editor SourceGraph: Search the code in Github OpenGrok: Search any code, host your own git: Distributed version control system github.com: Well known code repository Review Board: Code review tool Gerrit Code Review: Another code review tool: Another code review tool Jenkins: CI/CD tools JIRA: an enterprise bug tracking system Bugzilla: an open source bug tracking system remark: A simple, in-browser, markdown-driven slideshow tool.</description>
     </item>
-    
     <item>
       <title>Hello, The Infra Guy</title>
       <link>https://bsdnet.github.io/posts/hello-the-infra-guy/</link>
       <pubDate>Sat, 19 Mar 2022 10:44:39 -0700</pubDate>
-      
       <guid>https://bsdnet.github.io/posts/hello-the-infra-guy/</guid>
       <description>This post describes how I created this blog website using a couple of hours.
 Objective The objective is to build a website using Hugo and Github Pages.
@@ -129,6 +112,5 @@ Create a Github account if you do not have one
 Create a Github Repository
 Keep in mind, you can&amp;rsquo;t use user name and password to access Git Repo now. You have to use a token a SSH key for the sake of security.</description>
     </item>
-    
   </channel>
 </rss>

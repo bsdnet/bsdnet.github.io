@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>kubernetes on Learn, Practice, Summarize, Share</title>
     <link>https://bsdnet.github.io/categories/kubernetes/</link>
     <description>Recent content in kubernetes on Learn, Practice, Summarize, Share</description>
     <image>
+      <title>Learn, Practice, Summarize, Share</title>
       <url>https://bsdnet.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://bsdnet.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 May 2023 13:36:28 -0800</lastBuildDate><atom:link href="https://bsdnet.github.io/categories/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 20 May 2023 13:36:28 -0800</lastBuildDate>
+    <atom:link href="https://bsdnet.github.io/categories/kubernetes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kubernetes Cluster Illustrated</title>
       <link>https://bsdnet.github.io/posts/kubernetes-cluster-architecture-illustrated/</link>
       <pubDate>Sat, 20 May 2023 13:36:28 -0800</pubDate>
-      
       <guid>https://bsdnet.github.io/posts/kubernetes-cluster-architecture-illustrated/</guid>
       <description>Objective To illustrate kubernetes cluster architecture and understand critical Kubernetes components.
 Cluster Architecture Control Plane Components Control Plane components run on one or mulptile control plane nodes.
@@ -23,12 +24,10 @@ kube-apiserver kube-apiserver implements the Kubernetes API, and is designed to 
 kube-apiserver runs as a static pod or systemd daemon, configured using Pod specification or systemd unit and configuration file in /etc.
 etcd etcd is a consistent and highly-available key value store used for storing Kubernetes&amp;rsquo; cluster data.</description>
     </item>
-    
     <item>
       <title>vSphere CSI Driver Illustrated</title>
       <link>https://bsdnet.github.io/posts/vsphere-csi-driver-illustrated/</link>
       <pubDate>Sun, 25 Dec 2022 16:15:26 -0800</pubDate>
-      
       <guid>https://bsdnet.github.io/posts/vsphere-csi-driver-illustrated/</guid>
       <description>Objective To understand how vSphere CSI driver works and is being deployed.
 vSphere CSI Driver Architecture vSphere CSI Driver Deployment vSphere CSI Driver is a Kubernetes Deployment that includes multiple containers and runs on the control plane node.
@@ -36,18 +35,15 @@ csi-snapshotter csi-snapshotter is the sidecar container that watches for Volume
 See Description and Github for further details.
 csi-resizer csi-resizer is a sidecar container that watches the Kubernetes API server for PersistentVolumeClaim updates and triggers ControllerExpandVolume operation.</description>
     </item>
-    
     <item>
       <title>Kubernetes Container Stack Illustrated</title>
       <link>https://bsdnet.github.io/posts/kubernetes-container-stack-illustrated/</link>
       <pubDate>Sat, 09 Apr 2022 18:51:57 -0700</pubDate>
-      
       <guid>https://bsdnet.github.io/posts/kubernetes-container-stack-illustrated/</guid>
       <description>In Kubernetes 1.24, dockershim will be removed. What does it mean, let&amp;rsquo;s take a look the container stackbefore and after dockershim removal.
 Objective To walkthrough container stack on a Kubernetes node.
 Before 1.24 release Since 1.24 release Walk-through Using the opportunity, we can walkthrough the container stack and corresponding tooling on a Kubernetes node from top to bottom.
 apiserver apiserver sits on the Kubernetes master, validates and configures data for the api objects which include pods, services, replicationcontrollers and others.</description>
     </item>
-    
   </channel>
 </rss>
