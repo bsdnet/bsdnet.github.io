@@ -20,7 +20,7 @@
       <guid>https://bsdnet.github.io/posts/kubernetes-cp-ha-implementation/</guid>
       <description>Objective To understand how Kubernetes HA is implemented, especially the stacked etcd topology.
 Kubernetes Control Plane HA Architecture Concepts In addition to three control plane nodes, HAProxy and Keepalived are the key components to implement Highly Available Kubernetes Control Plane.
-HAProxy HAProxy is a popular open source TCP/HTTP Loadbalancer and Proxy solution. HAProy balance the traffic among Kubernetes Control Plane nodes via Control Plane VIP. However, if a single HAProxy instance is deployed, Kubernetes Control Plane will become unavailable once it failed.</description>
+HAProxy Like Nginx, HAProxy is a popular open source TCP/HTTP Loadbalancer and Proxy solution. HAProxy balance the traffic among Kubernetes Control Plane nodes via Control Plane VIP. However, if a single HAProxy instance is deployed, Kubernetes Control Plane will become unavailable once the HAProxy failed.</description>
     </item>
     <item>
       <title>Linux Performance Tuning</title>
