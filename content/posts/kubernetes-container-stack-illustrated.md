@@ -7,31 +7,31 @@ draft: false
 
 In Kubernetes 1.24, [dockershim](https://kubernetes.io/blog/2021/11/12/are-you-ready-for-dockershim-removal/) will be removed. What does it mean, let's take a look the container stackbefore and after dockershim removal. 
 
-# Objective
+## Objective
 
 To walkthrough container stack on a Kubernetes node.
 
-# Before 1.24 release
+## Before 1.24 release
 
 ![Kubernetes Container Stack Before 1.24](/images/kubernetes-container-stack-before-124.png)
 
-# Since 1.24 release
+## Since 1.24 release
 
 ![Kubernetes Container Stack Since 1.24](/images/kubernetes-container-stack-124.png)
 
-# Walk-through
+## Walk-through
 
 Using the opportunity, we can walkthrough the container stack and corresponding tooling on a Kubernetes node from top to bottom.
 
-## apiserver
+### apiserver
 
 [apiserver](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/) sits on the Kubernetes master, validates and configures data for the api objects which include pods, services, replicationcontrollers and others. The API Server services REST operations and provides the cluster's shared state.
 
-## kubelet
+### kubelet
 
 [kublet](https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/) is the primary node agent that runs on each Kubernetes node and register the node with the apiserver. kubelet manages pod using PodSpec in YAML or JSON format. kubelet implement the CRI client, and also have dockershim before Kubernete 1.24.
 
-## CRI Container Runtime
+### CRI Container Runtime
 
 A container runtime is software that executes containers and manage container images. [Container Runtime Interface(CRI)](https://kubernetes.io/docs/concepts/architecture/cri/) is a plugin interface which enables kubelet to use a wide variety of container runtimes without recompiling. CRI consists of a protocol buffers, gRPC API, and libraries. Popular contianer runtimes include [docker engine](https://docs.docker.com/engine/), [cri-o](https://cri-o.io/), [contaienrd](https://containerd.io/), and rktlet, frakti. dockershim in kubelet implements CRI interfaces; cri-o implements OCI conformant runtime; frakti is hypervisor-based container runtime while rktlet is the rkt contaienr runtime that is in frozen state.
 
@@ -40,7 +40,7 @@ containerd is an OCI compliant core container runtime and provides minimum set o
 The biggest change in Kubernetes 1.24 is dockershim removal from kubelet source code. To keep docker engine as a container runtime, cri-dockerd is invented to bridge the gap.
 
 
-## OCI Runtime
+### OCI Runtime
 
 Performance, security and compability results in multiple OCI compatible runtimes in Kubernetes Ecosystem.
 

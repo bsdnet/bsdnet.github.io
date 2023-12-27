@@ -5,43 +5,43 @@ categories: kubernetes
 draft: fasle 
 ---
 
-# Objective
+## Objective
 
 To illustrate kubernetes cluster architecture and understand critical Kubernetes components.
 
-# Cluster Architecture
+## Cluster Architecture
 
 ![Kubernetes Cluster Architecture](/images/kubernetes-cluster-architecture.png)
 
-# Control Plane Components 
+## Control Plane Components 
 
 Control Plane components run on one or mulptile control plane nodes.
 
-## kube-apiserver
+### kube-apiserver
 
 [kube-apiserver](https://github.com/kubernetes/apiserver) implements the Kubernetes API, and is designed to scale horizontally.
 
 kube-apiserver runs as a [static pod](https://kubernetes.io/docs/tasks/configure-pod-container/static-pod/) or systemd daemon, configured using Pod specification or systemd unit and configuration file in /etc.
 
-## etcd 
+### etcd 
 
 [etcd](https://etcd.io/docs/) is a consistent and highly-available key value store used for storing Kubernetes' cluster data.
 
 etcd runs as a [static pod](https://kubernetes.io/docs/tasks/configure-pod-container/static-pod/) or systemd daemon, configured using Pod specification or systemd unit and configuration file in /etc.
 
-## kube-scheduler
+### kube-scheduler
 
 [kube-scheduler](https://github.com/kubernetes/kube-scheduler) watches for newly created Pods and selects a node for Pods to run on.
 
 kube-scheduler runs as a [static pod](https://kubernetes.io/docs/tasks/configure-pod-container/static-pod/) or systemd daemon, configured using Pod specification or systemd unit and configuration file in /etc.
 
-## kube-controller-manager
+### kube-controller-manager
 
 kube-controller-manager implements Node, Job, EndpointSlice and ServiceAccount controllers. 
 
 kube-controller-manager runs as a [static pod](https://kubernetes.io/docs/tasks/configure-pod-container/static-pod/) or systemd daemon, configured using Pod specification or systemd unit and configuration file in /etc..
 
-## cloud-controller-manager
+### cloud-controller-manager
 
 [cloud-controller-manager](https://kubernetes.io/docs/concepts/architecture/cloud-controller/) implements cloud-specfic control logic.
 
@@ -49,29 +49,29 @@ cloud-controller-manager is optional. One example is [vSphee Cloud Controller Ma
 
 cloud-controller-manager runs as a static pod or systemd daemon, configured using Pod specification or systemd unit and configuration file in /etc.
 
-# Node Components
+## Node Components
 
 Node Components run on every node including Control Plane nodes.
 
-## kubelet
+### kubelet
 
 kubelet is the node agent that runs on each node, and make sure containers are running in a pod.
 
 kubelet runs as a system daemon, configured using systemd unit and configuration file in /etc.
 
-## kube-proxy
+### kube-proxy
 
 kube-proxy runs on each node as a network proxy that maintains network rules.
 
 kube-proxy usually runs as a [DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/), configured using DaemonSet specification
 
-## Container runtime
+### Container runtime
 
 Container runtime such as [containerd](https://github.com/containerd/containerd), [CRI-O](https://github.com/cri-o/cri-o) is reponsible for running containers.
 
 Containerd runs as a system daemon, configured using systemd unit and configuration file in /etc
 
-# Kubernete Nodes 
+## Kubernete Nodes 
 
 A Kubernetes cluster consists of two kinds of nodes: control plane nodes and worker nodes.
 
@@ -79,6 +79,6 @@ Node can run on hardware, virtual platform like vSphere and KVM, cloud platform 
 
 ![Kubernetes Nodes](/images/kubernetes-node.png)
    
-# References
+## References
 
 * [Kubernetes Components](https://kubernetes.io/docs/concepts/overview/components/)

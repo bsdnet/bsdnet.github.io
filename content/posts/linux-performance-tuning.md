@@ -6,12 +6,12 @@ draft: false
 
 This post will collect all articles related to Linux Performance Tuning.
 
-# Objective
+## Objective
 
 To understand the performance tuning by going deeper and provide guidance to
 tune the performance of Kubernetes node.
 
-# System
+## System
 - [Linux Performance](https://www.brendangregg.com/linuxperf.html)
 - [Performance
   Tunning](https://cromwell-intl.com/open-source/performance-tuning/)
@@ -29,13 +29,13 @@ tune the performance of Kubernetes node.
 - [Intel Extension for
   Pytorch](https://intel.github.io/intel-extension-for-pytorch/latest/tutorials/performance_tuning/tuning_guide.html)
 
-# CPU
+## CPU
 - [3 tips for Linux process performance improvement with priority and
   affinity](https://www.redhat.com/sysadmin/tune-linux-tips)
 
-# Memory
+## Memory
 
-# Disk I/O
+## Disk I/O
 - [Dealing with Memory and Disk
   I/O](https://www.yugabyte.com/blog/linux-performance-tuning-memory-disk-io/)
 - [Filesystem Peformance Tuning for EXT4](https://support.cpanel.net/hc/en-us/articles/360053811353-Filesystem-Performance-Tuning-for-EXT-4)
@@ -57,7 +57,7 @@ tune the performance of Kubernetes node.
 - [Intel: Tuning the performance of Intel
   SSD](https://community.intel.com/t5/Blogs/Products-and-Solutions/Memory-Storage/Tuning-the-performance-of-Intel-Optane-SSDs-on-Linux-Operating/post/1334953)
 
-# Networking
+## Networking
 - [Broadcom: TCP Performance Tuning](https://techdocs.broadcom.com/us/en/storage-and-ethernet-connectivity/ethernet-nic-controllers/bcm957xxx/adapters/Tuning/tcp-performance-tuning.html)
 - [SUSE: Tuning the
   network](https://documentation.suse.com/zh-tw/sles/15-SP3/html/SLES-all/cha-tuning-network.html)

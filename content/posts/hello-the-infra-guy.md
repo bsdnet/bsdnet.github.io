@@ -6,11 +6,11 @@ draft: false
 
 This post describes how I created this blog website using a couple of hours.
 
-# Objective 
+## Objective 
 
 The objective is to build a website using Hugo and Github Pages.
 
-# Steps
+## Steps
 
 Follow the steps listed below:
 
@@ -37,7 +37,7 @@ Follow the steps listed below:
 
   Now, you can use your favorite Editor, e.g Visual Code or Vim,  to write blogs.
 
-# Summary
+## Summary
 
 We learned and used the following concepts so far:
 
@@ -48,7 +48,7 @@ We learned and used the following concepts so far:
 - Github Actions
 - Hugo
 
-# Reference
+## Reference
 
 Here are list of links I refered to make this happen:
 
@@ -56,7 +56,7 @@ Here are list of links I refered to make this happen:
 2. [Goldmark Mardown](https://www.markdownguide.org/tools/hugo/)
 3. [Hugo Quick Start](https://gohugo.io/getting-started/quick-start/)
 4. [Hugo on Github](https://gohugo.io/hosting-and-deployment/hosting-on-github/)
-5. [Github Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#user--organization-pages)
+5. [Github Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages##user--organization-pages)
 6. [GitHub Actions for Hugo](https://github.com/marketplace/actions/hugo-setup)
 7. [GitHub Pages Action](https://github.com/marketplace/actions/github-pages-action)
 8. [GitHub Actions](https://docs.github.com/en/actions)
