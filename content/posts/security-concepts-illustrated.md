@@ -28,7 +28,7 @@ hash function. While an encypted message digest forms a [digital signature](http
 
 ![Message Digest](/images/message-digest-digital-signature.png)
 
-### Signing 
+### Signing
 
 Signing is widely used in today's software system from Secure Boot to
 TLS/SSL communication via HTTPS. Not mention to software package signing
@@ -58,3 +58,4 @@ Once you got the certicate, you can understand [how TLS/SSL cetificates work](ht
 1. [Overview of SSL/TLS handshake](https://www.ibm.com/docs/en/ibm-mq/7.5?topic=ssl-overview-tls-handshake)
 1. [PKI tutorial](https://pki-tutorial.readthedocs.io/en/latest/)
 1. [The illustrated TLS 1.3 Connection](https://tls13.xargs.org/)
+1. [OpenSSL Tutorial](https://www.cs.toronto.edu/~arnold/427/19s/427_19S/tool/ssl/notes.pdf)
