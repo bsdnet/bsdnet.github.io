@@ -51,6 +51,7 @@ The CSR will be approve and signed by a Certificate Authority(CA), and come back
 Once you got the certicate, you can understand [how TLS/SSL cetificates work](https://www.digicert.com/how-tls-ssl-certificates-work)
 
 ## References
+1. [Learning SSL](https://www.bbkane.com/blog/learn-ssl/)
 1. [How PGP works](http://users.ece.cmu.edu/~adrian/630-f04/PGP-intro.html)
 1. [Overview of Symmetric Encryption](https://www.cryptomathic.com/news-events/blog/an-overview-of-symmetric-encryption-and-the-key-lifecycle)
 1. [OpenSSL 3.0 Doc](https://www.openssl.org/docs/man3.0/)

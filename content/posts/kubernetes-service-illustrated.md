@@ -1,7 +1,7 @@
 ---
 title: "Kubernetes Service Illustrated"
 date: 2023-05-13T14:17:22-07:00
-draft: false 
+draft: false
 ---
 
 ## Objective
@@ -59,12 +59,11 @@ corresponds to `containerPort` in the Pod spec. `port` in `Sevice` spec is the p
 ### Service, Load Balancer, Ingress
 
 [Service](https://github.com/kubernetes/kubernetes/blob/master/pkg/apis/core/types.go##L3999) is the main approach to [expose applications running either within or outside of the cluster](https://kubernetes.io/docs/tutorials/services/connect-applications-service/).
-Service can be exposed by LoadBalancer by [creating an external Load Balancer](https://kubernetes.io/docs/tasks/access-application-cluster/create-external-load-balancer/) such as F5. Service usually works at Layer 4 within cluster. 
+Service can be exposed by LoadBalancer by [creating an external Load Balancer](https://kubernetes.io/docs/tasks/access-application-cluster/create-external-load-balancer/) such as F5. Service usually works at Layer 4 within cluster.
 
-While [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/) is one way to manage external access to the Service in a Kubernete cluster via HTTP or HTTPS protocol. An Ingress may be configured to give Services externally-reachable URLs, load blance traffice, terminate SSL/TLS, and ususlly require an [ingress controller](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/) such as [Istio Ingress](https://istio.io/latest/docs/tasks/traffic-management/ingress/kubernetes-ingress/). Ingress usually works at Layer 7. 
- 
+While [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/) is one way to manage external access to the Service in a Kubernete cluster via HTTP or HTTPS protocol. An Ingress may be configured to give Services externally-reachable URLs, load blance traffice, terminate SSL/TLS, and ususlly require an [ingress controller](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/) such as [Istio Ingress](https://istio.io/latest/docs/tasks/traffic-management/ingress/kubernetes-ingress/). Ingress usually works at Layer 7.
 
 ## Reference
 *  [Explained: Kubernete Service Ports](https://nigelpoulton.com/explained-kubernetes-service-ports/)
 *  [Understanding Kubernetes service & ingress networking](https://www.cortex.io/post/understanding-kubernetes-services-ingress-networking)
-*  [Service](https://kubernetes.io/docs/concepts/services-networking/service/) 
+*  [Service](https://kubernetes.io/docs/concepts/services-networking/service/)

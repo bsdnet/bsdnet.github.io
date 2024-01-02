@@ -6,7 +6,7 @@ draft: false
 
 This post describes how I created this blog website using a couple of hours.
 
-## Objective 
+## Objective
 
 The objective is to build a website using Hugo and Github Pages.
 
@@ -16,7 +16,7 @@ Follow the steps listed below:
 
 1. Create a Github account if you do not have one
 
-2. Create a Github Repository 
+2. Create a Github Repository
 
   Keep in mind, you can't use user name and password to access Git Repo now.
   You have to use a token a SSH key for the sake of security.

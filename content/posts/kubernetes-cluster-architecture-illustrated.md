@@ -2,7 +2,7 @@
 title: "Kubernetes Cluster Illustrated"
 date: 2023-05-20T13:36:28-08:00
 categories: kubernetes
-draft: fasle 
+draft: fasle
 ---
 
 ## Objective
@@ -13,7 +13,7 @@ To illustrate kubernetes cluster architecture and understand critical Kubernetes
 
 ![Kubernetes Cluster Architecture](/images/kubernetes-cluster-architecture.png)
 
-## Control Plane Components 
+## Control Plane Components
 
 Control Plane components run on one or mulptile control plane nodes.
 
@@ -23,7 +23,7 @@ Control Plane components run on one or mulptile control plane nodes.
 
 kube-apiserver runs as a [static pod](https://kubernetes.io/docs/tasks/configure-pod-container/static-pod/) or systemd daemon, configured using Pod specification or systemd unit and configuration file in /etc.
 
-### etcd 
+### etcd
 
 [etcd](https://etcd.io/docs/) is a consistent and highly-available key value store used for storing Kubernetes' cluster data.
 
@@ -37,7 +37,7 @@ kube-scheduler runs as a [static pod](https://kubernetes.io/docs/tasks/configure
 
 ### kube-controller-manager
 
-kube-controller-manager implements Node, Job, EndpointSlice and ServiceAccount controllers. 
+kube-controller-manager implements Node, Job, EndpointSlice and ServiceAccount controllers.
 
 kube-controller-manager runs as a [static pod](https://kubernetes.io/docs/tasks/configure-pod-container/static-pod/) or systemd daemon, configured using Pod specification or systemd unit and configuration file in /etc..
 
@@ -71,14 +71,14 @@ Container runtime such as [containerd](https://github.com/containerd/containerd)
 
 Containerd runs as a system daemon, configured using systemd unit and configuration file in /etc
 
-## Kubernete Nodes 
+## Kubernete Nodes
 
 A Kubernetes cluster consists of two kinds of nodes: control plane nodes and worker nodes.
 
-Node can run on hardware, virtual platform like vSphere and KVM, cloud platform like Amazon AWS, MicrsoftAzure, Google GCP. Linux is the common Operating System running Kubernetes. Binaries and libraries are built on top of Linux Kernel, e.g Systemd, Kubelet, Containerd. Containerd/Runc is the most common container runtime. etcd, kube-apiserver, kube-scheduler, kube-control-manager, cloud-control-manager usually run as static pods on control plane nodes. kube-proxy runs as a daemonset. 
+Node can run on hardware, virtual platform like vSphere and KVM, cloud platform like Amazon AWS, MicrsoftAzure, Google GCP. Linux is the common Operating System running Kubernetes. Binaries and libraries are built on top of Linux Kernel, e.g Systemd, Kubelet, Containerd. Containerd/Runc is the most common container runtime. etcd, kube-apiserver, kube-scheduler, kube-control-manager, cloud-control-manager usually run as static pods on control plane nodes. kube-proxy runs as a daemonset.
 
 ![Kubernetes Nodes](/images/kubernetes-node.png)
-   
+
 ## References
 
 * [Kubernetes Components](https://kubernetes.io/docs/concepts/overview/components/)

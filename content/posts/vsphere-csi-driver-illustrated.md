@@ -10,7 +10,7 @@ draft: false
 
 To understand how [vSphere CSI driver](https://docs.vmware.com/en/VMware-vSphere-Container-Storage-Plug-in/2.0/vmware-vsphere-csp-getting-started/GUID-74AF02D7-1562-48BD-A9FE-C81A53342AC3.html) works and is being deployed.
 
-## vSphere CSI Driver Architecture 
+## vSphere CSI Driver Architecture
 ![vSphere CSI Driver Architecture](/images/vsphere-csi-driver-architecture.png)
 
 ## vSphere CSI Driver Deployment
@@ -34,7 +34,7 @@ and triggers `ControllerExpandVolume` operation.
 See [Description](https://kubernetes-csi.github.io/docs/external-resizer.html##description) and [Github](https://github.com/kubernetes-csi/external-resizer) for further details.
 
 ### csi-attacher
-csi-attacher is a sidecar container that attaches volumes to nodes by calling `ControllerPublish` and `ControllerUnpublish` functions of CSI drivers. 
+csi-attacher is a sidecar container that attaches volumes to nodes by calling `ControllerPublish` and `ControllerUnpublish` functions of CSI drivers.
 
 See [Description](https://kubernetes-csi.github.io/docs/external-attacher.html##description) and [Github](https://github.com/kubernetes-csi/external-attacher) for further details.
 
