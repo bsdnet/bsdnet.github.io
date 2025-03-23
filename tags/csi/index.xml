@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>csi on Learn, Practice, Summarize, Share</title>
+    <title>Csi on Learn, Practice, Summarize, Share</title>
     <link>https://bsdnet.github.io/tags/csi/</link>
-    <description>Recent content in csi on Learn, Practice, Summarize, Share</description>
+    <description>Recent content in Csi on Learn, Practice, Summarize, Share</description>
     <image>
       <title>Learn, Practice, Summarize, Share</title>
       <url>https://bsdnet.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
@@ -18,11 +18,23 @@
       <link>https://bsdnet.github.io/posts/vsphere-csi-driver-illustrated/</link>
       <pubDate>Sun, 25 Dec 2022 16:15:26 -0800</pubDate>
       <guid>https://bsdnet.github.io/posts/vsphere-csi-driver-illustrated/</guid>
-      <description>Objective To understand how vSphere CSI driver works and is being deployed.
-vSphere CSI Driver Architecture vSphere CSI Driver Deployment vSphere CSI Driver is a Kubernetes Deployment that includes multiple containers and runs on the control plane node.
-csi-snapshotter csi-snapshotter is the sidecar container that watches for VolumeSnapshotContent create/update/delete events. csi-snapshotter works with CSI snapshot controller together implement CSI snapshot function.
-See Description and Github for further details.
-csi-resizer csi-resizer is a sidecar container that watches the Kubernetes API server for PersistentVolumeClaim updates and triggers ControllerExpandVolume operation.</description>
+      <description>&lt;h2 id=&#34;objective&#34;&gt;Objective&lt;/h2&gt;
+&lt;p&gt;To understand how &lt;a href=&#34;https://docs.vmware.com/en/VMware-vSphere-Container-Storage-Plug-in/2.0/vmware-vsphere-csp-getting-started/GUID-74AF02D7-1562-48BD-A9FE-C81A53342AC3.html&#34;&gt;vSphere CSI driver&lt;/a&gt; works and is being deployed.&lt;/p&gt;
+&lt;h2 id=&#34;vsphere-csi-driver-architecture&#34;&gt;vSphere CSI Driver Architecture&lt;/h2&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://bsdnet.github.io/images/vsphere-csi-driver-architecture.png&#34; alt=&#34;vSphere CSI Driver Architecture&#34;  /&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;vsphere-csi-driver-deployment&#34;&gt;vSphere CSI Driver Deployment&lt;/h2&gt;
+&lt;p&gt;vSphere CSI Driver is a Kubernetes &lt;a href=&#34;https://kubernetes.io/docs/concepts/workloads/controllers/deployment/&#34;&gt;Deployment&lt;/a&gt; that includes multiple containers and runs
+on the control plane node.&lt;/p&gt;
+&lt;h3 id=&#34;csi-snapshotter&#34;&gt;csi-snapshotter&lt;/h3&gt;
+&lt;p&gt;csi-snapshotter is the sidecar container that watches for &lt;code&gt;VolumeSnapshotContent&lt;/code&gt;
+create/update/delete events. csi-snapshotter works with CSI snapshot controller
+together implement CSI snapshot function.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;https://kubernetes-csi.github.io/docs/external-snapshotter.html##description&#34;&gt;Description&lt;/a&gt;
+and &lt;a href=&#34;https://github.com/kubernetes-csi/external-snapshotter/tree/master/cmd/csi-snapshotter&#34;&gt;Github&lt;/a&gt; for further details.&lt;/p&gt;
+&lt;h3 id=&#34;csi-resizer&#34;&gt;csi-resizer&lt;/h3&gt;
+&lt;p&gt;csi-resizer is a sidecar container that watches the Kubernetes API server for &lt;code&gt;PersistentVolumeClaim&lt;/code&gt; updates
+and triggers &lt;code&gt;ControllerExpandVolume&lt;/code&gt; operation.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

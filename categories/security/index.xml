@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>security on Learn, Practice, Summarize, Share</title>
+    <title>Security on Learn, Practice, Summarize, Share</title>
     <link>https://bsdnet.github.io/categories/security/</link>
-    <description>Recent content in security on Learn, Practice, Summarize, Share</description>
+    <description>Recent content in Security on Learn, Practice, Summarize, Share</description>
     <image>
       <title>Learn, Practice, Summarize, Share</title>
       <url>https://bsdnet.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
@@ -18,9 +18,15 @@
       <link>https://bsdnet.github.io/posts/security-concepts-illustrated/</link>
       <pubDate>Sun, 21 Aug 2022 15:14:08 -0700</pubDate>
       <guid>https://bsdnet.github.io/posts/security-concepts-illustrated/</guid>
-      <description>It will be helpful to understand modern software system like Kuberneteswith fundamental security concepts. For example, symmetric encryption, asymmetric encryption, public/private key, digital signature, certificate and signing.
-Objective Use diagram to illustrate critical security concepts used in modern software.
-Concepts Encryption Symmetric encryption uses same key for both encryption and decryption; while asymmetric encryption use different but mathematically relatedkeys for enryption and decryption. Symmetric Encyption can be illustrated in the following diagram: Asymmetric Encryption can be represented as follows: Message Digest A message digest is a fixed size numeric representation of the conents of a message, computed by a hash function.</description>
+      <description>&lt;p&gt;It will be helpful to understand modern software system like &lt;a href=&#34;https://kubernetes.io/&#34;&gt;Kubernetes&lt;/a&gt;with fundamental security concepts. For example, symmetric encryption, asymmetric encryption, public/private key, digital signature, certificate and signing.&lt;/p&gt;
+&lt;h2 id=&#34;objective&#34;&gt;Objective&lt;/h2&gt;
+&lt;p&gt;Use diagram to illustrate critical security concepts used in modern software.&lt;/p&gt;
+&lt;h2 id=&#34;concepts&#34;&gt;Concepts&lt;/h2&gt;
+&lt;h3 id=&#34;encryption&#34;&gt;Encryption&lt;/h3&gt;
+&lt;p&gt;Symmetric encryption uses same key for both encryption and decryption; while asymmetric encryption use different but mathematically relatedkeys for enryption and decryption.
+&lt;a href=&#34;https://www.cryptomathic.com/news-events/blog/symmetric-key-encryption-why-where-and-how-its-used-in-banking&#34;&gt;Symmetric Encyption&lt;/a&gt; can be illustrated in the following diagram:
+&lt;img loading=&#34;lazy&#34; src=&#34;https://bsdnet.github.io/images/symmetric-encryption.png&#34; alt=&#34;Symmetric Encyption&#34;  /&gt;
+&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

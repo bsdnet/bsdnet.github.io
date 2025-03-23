@@ -11,106 +11,272 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 25 Dec 2023 21:41:59 -0800</lastBuildDate>
+    <lastBuildDate>Sun, 01 Dec 2024 03:13:59 +0000</lastBuildDate>
     <atom:link href="https://bsdnet.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Understand PCIe</title>
+      <link>https://bsdnet.github.io/posts/understand-pcie/</link>
+      <pubDate>Sun, 01 Dec 2024 03:13:59 +0000</pubDate>
+      <guid>https://bsdnet.github.io/posts/understand-pcie/</guid>
+      <description>&lt;h2 id=&#34;objective&#34;&gt;Objective&lt;/h2&gt;
+&lt;p&gt;To understand PCI Express(PCIe) from the perspective of software engigneering.&lt;/p&gt;
+&lt;h2 id=&#34;concepts&#34;&gt;Concepts&lt;/h2&gt;
+&lt;h3 id=&#34;pcie&#34;&gt;PCIe&lt;/h3&gt;
+&lt;p&gt;PCIe, or peripheral component interconnect express, is an interface standard for
+connecting high-speed I/O components such as GPUs, TPUs, RAID/HBA cards, Ethernet NICs
+,  SSD add-on cards or WiFi cards.&lt;/p&gt;
+&lt;p&gt;PCIe is point to point serial connection.&lt;/p&gt;
+&lt;h3 id=&#34;serdes-lanes--links-and-slots&#34;&gt;SerDes, Lanes,  Links and Slots.&lt;/h3&gt;
+&lt;p&gt;Each PCIe lane utilizes two SerDes(Serializer/Deserializer)pairs, one for
+transmitting and one for receiving data, resulting in a total of four physical
+wires or signal traces.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Kubernetes Control Plane HA Implementation</title>
       <link>https://bsdnet.github.io/posts/kubernetes-cp-ha-implementation/</link>
       <pubDate>Mon, 25 Dec 2023 21:41:59 -0800</pubDate>
       <guid>https://bsdnet.github.io/posts/kubernetes-cp-ha-implementation/</guid>
-      <description>Objective To understand how Kubernetes HA is implemented, especially the stacked etcd topology.
-Kubernetes Control Plane HA Architecture Concepts In addition to three control plane nodes, HAProxy and Keepalived are the key components to implement Highly Available Kubernetes Control Plane.
-HAProxy Like Nginx, HAProxy is a popular open source TCP/HTTP Loadbalancer and Proxy solution. HAProxy balance the traffic among Kubernetes Control Plane nodes via Control Plane VIP. However, if a single HAProxy instance is deployed, Kubernetes Control Plane will become unavailable once the HAProxy failed.</description>
+      <description>&lt;h2 id=&#34;objective&#34;&gt;Objective&lt;/h2&gt;
+&lt;p&gt;To understand how Kubernetes HA is implemented, especially the &lt;a href=&#34;https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/ha-topology/#stacked-etcd-topology&#34;&gt;stacked etcd topology&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;kubernetes-control-plane-ha-architecture&#34;&gt;Kubernetes Control Plane HA Architecture&lt;/h1&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://bsdnet.github.io/images/kubernetes-cp-ha-implementation.png&#34; alt=&#34;Kubernetes Control Plane HA Architecture&#34;  /&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;concepts&#34;&gt;Concepts&lt;/h2&gt;
+&lt;p&gt;In addition to three control plane nodes, HAProxy and Keepalived are the key components to implement Highly Available Kubernetes Control Plane.&lt;/p&gt;
+&lt;h3 id=&#34;haproxy&#34;&gt;HAProxy&lt;/h3&gt;
+&lt;p&gt;Like &lt;a href=&#34;https://docs.nginx.com/nginx/admin-guide/load-balancer/http-load-balancer/&#34;&gt;Nginx&lt;/a&gt;, &lt;a href=&#34;https://www.haproxy.org/&#34;&gt;HAProxy&lt;/a&gt; is a popular open source TCP/HTTP Loadbalancer and Proxy solution.
+HAProxy balance the traffic among Kubernetes Control Plane nodes via Control Plane VIP. However, if a single HAProxy instance is deployed, Kubernetes Control Plane will become unavailable once the HAProxy failed.
+Multiple HAProxy instances are used to avoid the single point of failurei problem.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Linux Performance Tuning</title>
       <link>https://bsdnet.github.io/posts/linux-performance-tuning/</link>
       <pubDate>Wed, 09 Aug 2023 17:41:00 +0000</pubDate>
       <guid>https://bsdnet.github.io/posts/linux-performance-tuning/</guid>
-      <description>This post will collect all articles related to Linux Performance Tuning.
-Objective To understand the performance tuning by going deeper and provide guidance to tune the performance of Kubernetes node.
-System Linux Performance Performance Tunning ArchLinux: Improving perfomance Linux Performance Tuning Low latency tuning guide Hadoop Tuning Guide for AMD EPYC Kafka Performance HPC Cluster Tuning on 3rd Gen Intel Xeon Processors Intel Extension for Pytorch CPU 3 tips for Linux process performance improvement with priority and affinity Memory Disk I/O Dealing with Memory and Disk I/O Filesystem Peformance Tuning for EXT4 Fast disk I/O with ext4 HOWTO EXT4 Filesystem Tuning Benchmarks PostgreSQL Filesystem Tuning BeeGFS: Tips for Storage Server Tuning Linux OS Tuning for MySQL Optimizing Your NFS Filesystem Linux kernel tuning for GlusterFS Linux disk performance tuning Intel: Tuning the performance of Intel SSD Networking Broadcom: TCP Performance Tuning SUSE: Tuning the network DPDK: Get best performance with Intel NIC Linux Performance Tuning Guide for Intel NIC Tuning 10Gb NICs highway to hell </description>
+      <description>&lt;p&gt;This post will collect all articles related to Linux Performance Tuning.&lt;/p&gt;
+&lt;h2 id=&#34;objective&#34;&gt;Objective&lt;/h2&gt;
+&lt;p&gt;To understand the performance tuning by going deeper and provide guidance to
+tune the performance of Kubernetes node.&lt;/p&gt;
+&lt;h2 id=&#34;system&#34;&gt;System&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.brendangregg.com/linuxperf.html&#34;&gt;Linux Performance&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cromwell-intl.com/open-source/performance-tuning/&#34;&gt;Performance
+Tunning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://wiki.archlinux.org/title/improving_performance&#34;&gt;ArchLinux: Improving
+perfomance&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/pulse/linux-performance-tuning-reza-bojnordi/&#34;&gt;Linux Performance
+Tuning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rigtorp.se/&#34;&gt;Low latency tuning guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amd.com/system/files/TechDocs/56419.pdf&#34;&gt;Hadoop Tuning Guide for AMD
+EPYC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.cloudera.com/documentation/enterprise/6/latest/topics/kafka_system_level_broker_tuning.html&#34;&gt;Kafka
+Performance&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.admin-magazine.com/HPC/Articles/Useful-NFS-Options-for-Tuning-and-Management&#34;&gt;HPC Cluster Tuning on 3rd Gen Intel Xeon
+Processors&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://intel.github.io/intel-extension-for-pytorch/latest/tutorials/performance_tuning/tuning_guide.html&#34;&gt;Intel Extension for
+Pytorch&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;cpu&#34;&gt;CPU&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.redhat.com/sysadmin/tune-linux-tips&#34;&gt;3 tips for Linux process performance improvement with priority and
+affinity&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;memory&#34;&gt;Memory&lt;/h2&gt;
+&lt;h2 id=&#34;disk-io&#34;&gt;Disk I/O&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.yugabyte.com/blog/linux-performance-tuning-memory-disk-io/&#34;&gt;Dealing with Memory and Disk
+I/O&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://support.cpanel.net/hc/en-us/articles/360053811353-Filesystem-Performance-Tuning-for-EXT-4&#34;&gt;Filesystem Peformance Tuning for EXT4&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linuxliteos.com/forums/tutorials/fast-disk-io-with-ext4-howto/&#34;&gt;Fast disk I/O with ext4
+HOWTO&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.phoronix.com/review/ext4_linux35_tuning&#34;&gt;EXT4 Filesystem Tuning
+Benchmarks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kb.techtaco.org/linux/postgresql/postgresql_file_system_tuning/&#34;&gt;PostgreSQL Filesystem
+Tuning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.beegfs.io/wiki/StorageServerTuning&#34;&gt;BeeGFS: Tips for Storage Server
+Tuning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.percona.com/blog/linux-os-tuning-for-mysql-database-performance/&#34;&gt;Linux OS Tuning for
+MySQL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.admin-magazine.com/HPC/Articles/Useful-NFS-Options-for-Tuning-and-Management&#34;&gt;Optimizing Your NFS
+Filesystem&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.gluster.org/en/v3/Administrator%20Guide/Linux%20Kernel%20Tuning/&#34;&gt;Linux kernel tuning for
+GlusterFS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kruyt.org/linux-disk-tuning/&#34;&gt;Linux disk performance tuning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://community.intel.com/t5/Blogs/Products-and-Solutions/Memory-Storage/Tuning-the-performance-of-Intel-Optane-SSDs-on-Linux-Operating/post/1334953&#34;&gt;Intel: Tuning the performance of Intel
+SSD&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;networking&#34;&gt;Networking&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://techdocs.broadcom.com/us/en/storage-and-ethernet-connectivity/ethernet-nic-controllers/bcm957xxx/adapters/Tuning/tcp-performance-tuning.html&#34;&gt;Broadcom: TCP Performance Tuning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://documentation.suse.com/zh-tw/sles/15-SP3/html/SLES-all/cha-tuning-network.html&#34;&gt;SUSE: Tuning the
+network&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://doc.dpdk.org/guides-2.2/linux_gsg/nic_perf_intel_platform.html&#34;&gt;DPDK: Get best performance with Intel
+NIC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.intel.com/content/www/us/en/support/articles/000088688/ethernet-products/800-series-network-adapters-up-to-100gbe.html&#34;&gt;Linux Performance Tuning Guide for Intel
+NIC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://darksideclouds.wordpress.com/2016/10/10/tuning-10gb-nics-highway-to-hell/&#34;&gt;Tuning 10Gb NICs highway to
+hell&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Which Node Is Pod Running On</title>
       <link>https://bsdnet.github.io/posts/which-node-is-pod-running-on/</link>
       <pubDate>Sun, 21 May 2023 08:05:52 -0700</pubDate>
       <guid>https://bsdnet.github.io/posts/which-node-is-pod-running-on/</guid>
-      <description>Objective To understand which Kubernetes node a pod is running on.
-Overview Various applications can be deployed in a Kubernetes cluster: Linux system daemons, Kubernetes components, Kubernetes Addons and various Kubernetes workloads.
-To bind applications to a Kubernete node, there are two ways:
-Static Binding Dynamic Scheduling Static Binding Critical Linux system daemons such as systemd, chrony, Network Manager, kubelet, Container Runtimes are required to run on each node as standalone programs.</description>
+      <description>&lt;h2 id=&#34;objective&#34;&gt;Objective&lt;/h2&gt;
+&lt;p&gt;To understand which Kubernetes &lt;a href=&#34;https://kubernetes.io/docs/concepts/architecture/nodes/&#34;&gt;node&lt;/a&gt; a &lt;a href=&#34;https://kubernetes.io/docs/concepts/workloads/pods/&#34;&gt;pod&lt;/a&gt; is running on.&lt;/p&gt;
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Various applications can be deployed in a Kubernetes cluster: Linux system
+daemons, Kubernetes components, Kubernetes Addons and various Kubernetes workloads.&lt;/p&gt;
+&lt;p&gt;To bind applications to a Kubernete node, there are two ways:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Static Binding&lt;/li&gt;
+&lt;li&gt;Dynamic Scheduling&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;static-binding&#34;&gt;Static Binding&lt;/h3&gt;
+&lt;p&gt;Critical Linux system daemons such as &lt;a href=&#34;https://www.freedesktop.org/wiki/Software/systemd/&#34;&gt;systemd&lt;/a&gt;, &lt;a href=&#34;https://chrony.tuxfamily.org/&#34;&gt;chrony&lt;/a&gt;, &lt;a href=&#34;https://networkmanager.dev/&#34;&gt;Network Manager&lt;/a&gt;, &lt;a href=&#34;https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/&#34;&gt;kubelet&lt;/a&gt;, &lt;a href=&#34;https://kubernetes.io/docs/setup/production-environment/container-runtimes/&#34;&gt;Container Runtimes&lt;/a&gt; are required to run on each node as standalone programs. Kubernetes control plane components are running in &lt;a href=&#34;https://kubernetes.io/docs/tasks/configure-pod-container/static-pod/&#34;&gt;static pods&lt;/a&gt;, which are managed directly by the kubelet daemon using &lt;a href=&#34;https://kubernetes.io/docs/concepts/workloads/pods/ephemeral-containers/&#34;&gt;manifest files&lt;/a&gt; under &lt;code&gt;/etc/kubernetes/manifests&lt;/code&gt;. Static pod can not refer to other Kubernetes objects like Service Account, ConfigMap, Secret, etc, and do not support &lt;a href=&#34;https://kubernetes.io/docs/concepts/workloads/pods/ephemeral-containers/&#34;&gt;ephemeral containers&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Kubernetes Cluster Illustrated</title>
       <link>https://bsdnet.github.io/posts/kubernetes-cluster-architecture-illustrated/</link>
       <pubDate>Sat, 20 May 2023 13:36:28 -0800</pubDate>
       <guid>https://bsdnet.github.io/posts/kubernetes-cluster-architecture-illustrated/</guid>
-      <description>Objective To illustrate kubernetes cluster architecture and understand critical Kubernetes components.
-Cluster Architecture Control Plane Components Control Plane components run on one or mulptile control plane nodes.
-kube-apiserver kube-apiserver implements the Kubernetes API, and is designed to scale horizontally.
-kube-apiserver runs as a static pod or systemd daemon, configured using Pod specification or systemd unit and configuration file in /etc.
-etcd etcd is a consistent and highly-available key value store used for storing Kubernetes&amp;rsquo; cluster data.</description>
+      <description>&lt;h2 id=&#34;objective&#34;&gt;Objective&lt;/h2&gt;
+&lt;p&gt;To illustrate kubernetes cluster architecture and understand critical Kubernetes components.&lt;/p&gt;
+&lt;h2 id=&#34;cluster-architecture&#34;&gt;Cluster Architecture&lt;/h2&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://bsdnet.github.io/images/kubernetes-cluster-architecture.png&#34; alt=&#34;Kubernetes Cluster Architecture&#34;  /&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;control-plane-components&#34;&gt;Control Plane Components&lt;/h2&gt;
+&lt;p&gt;Control Plane components run on one or mulptile control plane nodes.&lt;/p&gt;
+&lt;h3 id=&#34;kube-apiserver&#34;&gt;kube-apiserver&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/kubernetes/apiserver&#34;&gt;kube-apiserver&lt;/a&gt; implements the Kubernetes API, and is designed to scale horizontally.&lt;/p&gt;
+&lt;p&gt;kube-apiserver runs as a &lt;a href=&#34;https://kubernetes.io/docs/tasks/configure-pod-container/static-pod/&#34;&gt;static pod&lt;/a&gt; or systemd daemon, configured using Pod specification or systemd unit and configuration file in /etc.&lt;/p&gt;
+&lt;h3 id=&#34;etcd&#34;&gt;etcd&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://etcd.io/docs/&#34;&gt;etcd&lt;/a&gt; is a consistent and highly-available key value store used for storing Kubernetes&amp;rsquo; cluster data.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Kubernetes Service Illustrated</title>
       <link>https://bsdnet.github.io/posts/kubernetes-service-illustrated/</link>
       <pubDate>Sat, 13 May 2023 14:17:22 -0700</pubDate>
       <guid>https://bsdnet.github.io/posts/kubernetes-service-illustrated/</guid>
-      <description>Objective To understand the Service concept in Kubernetes.
-Concepts The following concepts are critical to understand the Service API in Kubernetes.
-Service Service is an abstraction to expose groups of Pods over a newtwork. Pods are selected via Labels and Selectors. Each Service object defines a logic set of Endpoints or EndpointSlice by Kubernetes control plane automatically.
-There are 4 Services types: ClusterIP, NodePort, LoadBalancer and ExternalName. Refer this article for illustration.</description>
+      <description>&lt;h2 id=&#34;objective&#34;&gt;Objective&lt;/h2&gt;
+&lt;p&gt;To understand the &lt;a href=&#34;https://kubernetes.io/docs/concepts/services-networking/service/&#34;&gt;Service&lt;/a&gt; concept in &lt;a href=&#34;https://kubernetes.io/&#34;&gt;Kubernetes&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;concepts&#34;&gt;Concepts&lt;/h2&gt;
+&lt;p&gt;The following concepts are critical to understand the Service API in Kubernetes.&lt;/p&gt;
+&lt;h3 id=&#34;service&#34;&gt;Service&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://kubernetes.io/docs/concepts/services-networking/service/##services-in-kubernetes&#34;&gt;Service&lt;/a&gt; is an abstraction to expose groups of &lt;a href=&#34;https://kubernetes.io/docs/concepts/workloads/pods/&#34;&gt;Pods&lt;/a&gt; over a newtwork. Pods are selected via &lt;a href=&#34;https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/&#34;&gt;Labels and Selectors&lt;/a&gt;. Each Service object defines a logic set of &lt;a href=&#34;https://kubernetes.io/docs/reference/kubernetes-api/service-resources/endpoints-v1/&#34;&gt;Endpoints&lt;/a&gt; or &lt;a href=&#34;https://kubernetes.io/docs/concepts/services-networking/endpoint-slices/&#34;&gt;EndpointSlice&lt;/a&gt; by Kubernetes control plane automatically.&lt;/p&gt;
+&lt;p&gt;There are 4 &lt;a href=&#34;https://kubernetes.io/docs/concepts/services-networking/service/##publishing-services-service-types&#34;&gt;Services types&lt;/a&gt;: ClusterIP, NodePort, LoadBalancer and ExternalName. Refer &lt;a href=&#34;https://nigelpoulton.com/explained-kubernetes-service-ports/&#34;&gt;this article&lt;/a&gt; for illustration.&lt;/p&gt;
+&lt;h3 id=&#34;clusterip&#34;&gt;ClusterIP&lt;/h3&gt;
+&lt;p&gt;CluterIP is the default Service type and exposes the Service &lt;strong&gt;within the cluster ONLY&lt;/strong&gt;. The &lt;a href=&#34;https://kubernetes.io/docs/concepts/services-networking/cluster-ip-allocation/&#34;&gt;IP address&lt;/a&gt; can be statically or dynamically chosen from &lt;code&gt;service-cluster-ip-range&lt;/code&gt; configured for the Kubernetes API server.&lt;/p&gt;</description>
     </item>
     <item>
       <title>vSphere CSI Driver Illustrated</title>
       <link>https://bsdnet.github.io/posts/vsphere-csi-driver-illustrated/</link>
       <pubDate>Sun, 25 Dec 2022 16:15:26 -0800</pubDate>
       <guid>https://bsdnet.github.io/posts/vsphere-csi-driver-illustrated/</guid>
-      <description>Objective To understand how vSphere CSI driver works and is being deployed.
-vSphere CSI Driver Architecture vSphere CSI Driver Deployment vSphere CSI Driver is a Kubernetes Deployment that includes multiple containers and runs on the control plane node.
-csi-snapshotter csi-snapshotter is the sidecar container that watches for VolumeSnapshotContent create/update/delete events. csi-snapshotter works with CSI snapshot controller together implement CSI snapshot function.
-See Description and Github for further details.
-csi-resizer csi-resizer is a sidecar container that watches the Kubernetes API server for PersistentVolumeClaim updates and triggers ControllerExpandVolume operation.</description>
+      <description>&lt;h2 id=&#34;objective&#34;&gt;Objective&lt;/h2&gt;
+&lt;p&gt;To understand how &lt;a href=&#34;https://docs.vmware.com/en/VMware-vSphere-Container-Storage-Plug-in/2.0/vmware-vsphere-csp-getting-started/GUID-74AF02D7-1562-48BD-A9FE-C81A53342AC3.html&#34;&gt;vSphere CSI driver&lt;/a&gt; works and is being deployed.&lt;/p&gt;
+&lt;h2 id=&#34;vsphere-csi-driver-architecture&#34;&gt;vSphere CSI Driver Architecture&lt;/h2&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://bsdnet.github.io/images/vsphere-csi-driver-architecture.png&#34; alt=&#34;vSphere CSI Driver Architecture&#34;  /&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;vsphere-csi-driver-deployment&#34;&gt;vSphere CSI Driver Deployment&lt;/h2&gt;
+&lt;p&gt;vSphere CSI Driver is a Kubernetes &lt;a href=&#34;https://kubernetes.io/docs/concepts/workloads/controllers/deployment/&#34;&gt;Deployment&lt;/a&gt; that includes multiple containers and runs
+on the control plane node.&lt;/p&gt;
+&lt;h3 id=&#34;csi-snapshotter&#34;&gt;csi-snapshotter&lt;/h3&gt;
+&lt;p&gt;csi-snapshotter is the sidecar container that watches for &lt;code&gt;VolumeSnapshotContent&lt;/code&gt;
+create/update/delete events. csi-snapshotter works with CSI snapshot controller
+together implement CSI snapshot function.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;https://kubernetes-csi.github.io/docs/external-snapshotter.html##description&#34;&gt;Description&lt;/a&gt;
+and &lt;a href=&#34;https://github.com/kubernetes-csi/external-snapshotter/tree/master/cmd/csi-snapshotter&#34;&gt;Github&lt;/a&gt; for further details.&lt;/p&gt;
+&lt;h3 id=&#34;csi-resizer&#34;&gt;csi-resizer&lt;/h3&gt;
+&lt;p&gt;csi-resizer is a sidecar container that watches the Kubernetes API server for &lt;code&gt;PersistentVolumeClaim&lt;/code&gt; updates
+and triggers &lt;code&gt;ControllerExpandVolume&lt;/code&gt; operation.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Security Concepts Illustrated</title>
       <link>https://bsdnet.github.io/posts/security-concepts-illustrated/</link>
       <pubDate>Sun, 21 Aug 2022 15:14:08 -0700</pubDate>
       <guid>https://bsdnet.github.io/posts/security-concepts-illustrated/</guid>
-      <description>It will be helpful to understand modern software system like Kuberneteswith fundamental security concepts. For example, symmetric encryption, asymmetric encryption, public/private key, digital signature, certificate and signing.
-Objective Use diagram to illustrate critical security concepts used in modern software.
-Concepts Encryption Symmetric encryption uses same key for both encryption and decryption; while asymmetric encryption use different but mathematically relatedkeys for enryption and decryption. Symmetric Encyption can be illustrated in the following diagram: Asymmetric Encryption can be represented as follows: Message Digest A message digest is a fixed size numeric representation of the conents of a message, computed by a hash function.</description>
+      <description>&lt;p&gt;It will be helpful to understand modern software system like &lt;a href=&#34;https://kubernetes.io/&#34;&gt;Kubernetes&lt;/a&gt;with fundamental security concepts. For example, symmetric encryption, asymmetric encryption, public/private key, digital signature, certificate and signing.&lt;/p&gt;
+&lt;h2 id=&#34;objective&#34;&gt;Objective&lt;/h2&gt;
+&lt;p&gt;Use diagram to illustrate critical security concepts used in modern software.&lt;/p&gt;
+&lt;h2 id=&#34;concepts&#34;&gt;Concepts&lt;/h2&gt;
+&lt;h3 id=&#34;encryption&#34;&gt;Encryption&lt;/h3&gt;
+&lt;p&gt;Symmetric encryption uses same key for both encryption and decryption; while asymmetric encryption use different but mathematically relatedkeys for enryption and decryption.
+&lt;a href=&#34;https://www.cryptomathic.com/news-events/blog/symmetric-key-encryption-why-where-and-how-its-used-in-banking&#34;&gt;Symmetric Encyption&lt;/a&gt; can be illustrated in the following diagram:
+&lt;img loading=&#34;lazy&#34; src=&#34;https://bsdnet.github.io/images/symmetric-encryption.png&#34; alt=&#34;Symmetric Encyption&#34;  /&gt;
+&lt;/p&gt;</description>
     </item>
     <item>
       <title>Kubernetes Container Stack Illustrated</title>
       <link>https://bsdnet.github.io/posts/kubernetes-container-stack-illustrated/</link>
       <pubDate>Sat, 09 Apr 2022 18:51:57 -0700</pubDate>
       <guid>https://bsdnet.github.io/posts/kubernetes-container-stack-illustrated/</guid>
-      <description>In Kubernetes 1.24, dockershim will be removed. What does it mean, let&amp;rsquo;s take a look the container stackbefore and after dockershim removal.
-Objective To walkthrough container stack on a Kubernetes node.
-Before 1.24 release Since 1.24 release Walk-through Using the opportunity, we can walkthrough the container stack and corresponding tooling on a Kubernetes node from top to bottom.
-apiserver apiserver sits on the Kubernetes master, validates and configures data for the api objects which include pods, services, replicationcontrollers and others.</description>
+      <description>&lt;p&gt;In Kubernetes 1.24, &lt;a href=&#34;https://kubernetes.io/blog/2021/11/12/are-you-ready-for-dockershim-removal/&#34;&gt;dockershim&lt;/a&gt; will be removed. What does it mean, let&amp;rsquo;s take a look the container stackbefore and after dockershim removal.&lt;/p&gt;
+&lt;h2 id=&#34;objective&#34;&gt;Objective&lt;/h2&gt;
+&lt;p&gt;To walkthrough container stack on a Kubernetes node.&lt;/p&gt;
+&lt;h2 id=&#34;before-124-release&#34;&gt;Before 1.24 release&lt;/h2&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://bsdnet.github.io/images/kubernetes-container-stack-before-124.png&#34; alt=&#34;Kubernetes Container Stack Before 1.24&#34;  /&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;since-124-release&#34;&gt;Since 1.24 release&lt;/h2&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://bsdnet.github.io/images/kubernetes-container-stack-124.png&#34; alt=&#34;Kubernetes Container Stack Since 1.24&#34;  /&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;walk-through&#34;&gt;Walk-through&lt;/h2&gt;
+&lt;p&gt;Using the opportunity, we can walkthrough the container stack and corresponding tooling on a Kubernetes node from top to bottom.&lt;/p&gt;
+&lt;h3 id=&#34;apiserver&#34;&gt;apiserver&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/&#34;&gt;apiserver&lt;/a&gt; sits on the Kubernetes master, validates and configures data for the api objects which include pods, services, replicationcontrollers and others. The API Server services REST operations and provides the cluster&amp;rsquo;s shared state.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Productivity Tools</title>
       <link>https://bsdnet.github.io/posts/productivity-tools/</link>
       <pubDate>Wed, 23 Mar 2022 22:00:46 -0700</pubDate>
       <guid>https://bsdnet.github.io/posts/productivity-tools/</guid>
-      <description>This post collects productivity tools used in my daily worklife.
-Documenting Excalidraw: Draw a diagram DokuWiki: a Wiki for yourself Programming Visual Studio Code: Code editor SourceGraph: Search the code in Github OpenGrok: Search any code, host your own git: Distributed version control system github.com: Well known code repository Review Board: Code review tool Gerrit Code Review: Another code review tool: Another code review tool Jenkins: CI/CD tools JIRA: an enterprise bug tracking system Bugzilla: an open source bug tracking system remark: A simple, in-browser, markdown-driven slideshow tool.</description>
+      <description>&lt;p&gt;This post collects productivity tools used in my daily worklife.&lt;/p&gt;
+&lt;h2 id=&#34;documenting&#34;&gt;Documenting&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://excalidraw.com/&#34;&gt;Excalidraw&lt;/a&gt;: Draw a diagram&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.dokuwiki.org/dokuwiki&#34;&gt;DokuWiki&lt;/a&gt;: a Wiki for yourself&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;programming&#34;&gt;Programming&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://code.visualstudio.com/&#34;&gt;Visual Studio Code&lt;/a&gt;: Code editor&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sourcegraph.com/search&#34;&gt;SourceGraph&lt;/a&gt;: Search the code in Github&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://oracle.github.io/opengrok/&#34;&gt;OpenGrok&lt;/a&gt;: Search any code, host your own&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://git-scm.com/&#34;&gt;git&lt;/a&gt;: Distributed version control system&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;github.com&#34;&gt;github.com&lt;/a&gt;: Well known code repository&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.reviewboard.org/&#34;&gt;Review Board&lt;/a&gt;: Code review tool&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.gerritcodereview.com/&#34;&gt;Gerrit Code Review&lt;/a&gt;: Another code review tool: Another code review tool&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jenkins.io/&#34;&gt;Jenkins&lt;/a&gt;: CI/CD tools&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jira.atlassian.com/&#34;&gt;JIRA&lt;/a&gt;: an enterprise bug tracking system&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.bugzilla.org/&#34;&gt;Bugzilla&lt;/a&gt;: an open source bug tracking system&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/gnab/remark&#34;&gt;remark&lt;/a&gt;: A simple, in-browser, markdown-driven slideshow tool.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;linux-kernel&#34;&gt;Linux Kernel&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://elixir.bootlin.com/linux/latest/source&#34;&gt;Linux Kernel Cross Reference&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linuxkernelcves.com/cves/&#34;&gt;Linux Kernel CVEs&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</description>
     </item>
     <item>
       <title>Hello, The Infra Guy</title>
       <link>https://bsdnet.github.io/posts/hello-the-infra-guy/</link>
       <pubDate>Sat, 19 Mar 2022 10:44:39 -0700</pubDate>
       <guid>https://bsdnet.github.io/posts/hello-the-infra-guy/</guid>
-      <description>This post describes how I created this blog website using a couple of hours.
-Objective The objective is to build a website using Hugo and Github Pages.
-Steps Follow the steps listed below:
-Create a Github account if you do not have one
-Create a Github Repository
-Keep in mind, you can&amp;rsquo;t use user name and password to access Git Repo now. You have to use a token a SSH key for the sake of security.</description>
+      <description>&lt;p&gt;This post describes how I created this blog website using a couple of hours.&lt;/p&gt;
+&lt;h2 id=&#34;objective&#34;&gt;Objective&lt;/h2&gt;
+&lt;p&gt;The objective is to build a website using Hugo and Github Pages.&lt;/p&gt;
+&lt;h2 id=&#34;steps&#34;&gt;Steps&lt;/h2&gt;
+&lt;p&gt;Follow the steps listed below:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Create a Github account if you do not have one&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create a Github Repository&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Keep in mind, you can&amp;rsquo;t use user name and password to access Git Repo now.
+You have to use a token a SSH key for the sake of security.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
