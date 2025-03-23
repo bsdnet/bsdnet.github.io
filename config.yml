@@ -50,6 +50,7 @@ params:
   hideSummary: false
   ShowToc: true
   TocOpen: true
+  social: true
 
   assets:
     favicon: /favicon_io/favicon.ico
