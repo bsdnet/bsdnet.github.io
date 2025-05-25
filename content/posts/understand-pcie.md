@@ -34,7 +34,7 @@ PCIe is a packet based protocol.
 
 The following is half Duplex speed table from Gen1 to Gen6.
 
-| SPEC                | X1         | X2         | X4         | X8         | X16         |
+| SPEC                | x1         | x2         | x4         | x8         | x16         |
 | ------------------- | ---------- | ---------- | ---------- | ---------- | ----------- |
 | PCIe 1.x (2.5 GT/s) | 250 MB/s   | 500 MB/s   | 1 GB/s     | 2 GB/s     | 4 GB/s      |
 | PCIe 2.x (5.0 GT/s) | 500 MB/s   | 1 GB/s     | 2 GB/s     | 4 GB/s     | 8 GB/s      |
@@ -48,20 +48,17 @@ changed to
 128b/130b encoding, which increased the effective data rate from around 80% to
 more than 98%.
 
-GT/s standas for Gigatransfers per second. Here is how to convert GT/s to Gbit/s, Gbps or Gigabits per
+GT/s stands for Gigatransfers per second. Here is how to convert GT/s to Gbit/s, Gbps or Gigabits per
 second.
 
-One PCI 1.x lane can transfer 2.5GT/s * 8/10=2.0Gbps or 250MB/s. X16 means
+One PCI 1.x lane can transfer 2.5GT/s * 8/10=2.0Gbps or 250MB/s. x16 means
 4GB/s.
 
-One PCI 5.x lane transfer 32GT/s * 128/132= 31.5Gbps or 3.938GB/s. X16 means
+One PCI 5.x lane transfer 32GT/s * 128/132= 31.5Gbps or 3.938GB/s. x16 means
 63.01GB/s.
 
-Keep in mind, the above speed is half duplex. In networking, people always use
-half duplex speed; while in PCIe world, people intends to use full duplex, which
-is cofusing.
-
-This article uses half duplex speed for the sake of simplicity.
+Keep in mind, the above speed is full duplex, which means each direction should
+be able to transfer data at this speed. Networking usually use full duplex too.
 
 ## Reference
 *  [Introduction to
@@ -72,3 +69,4 @@ PCIe and CXL](https://indico.cern.ch/event/1337180/contributions/5629298/attachm
 *  [PCI Express Tutorial](http://www.verien.com/pcie-primer.html)
 *  [What is PCIE Express](https://www.synopsys.com/glossary/what-is-pci-express.html)
 *  [Understanding PCIe Configuration for Maximum Performance](https://enterprise-support.nvidia.com/s/article/understanding-pcie-configuration-for-maximum-performance)
+*  [Linux Kernel and Measuring network throughput](https://atoonk.medium.com/linux-kernel-and-measuring-network-throughput-547c3b68c4d2)
